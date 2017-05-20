@@ -1,0 +1,21 @@
+# Folders
+.metadata/
+.metadata/*
+.metadata/**/*
+.recommenders/
+.recommenders/*
+.recommenders/**/*
+.settings/
+.settings/*
+.settings/**/*
+target/
+target/*
+target/**/*
+RemoteSystemsTempFiles/
+RemoteSystemsTempFiles/*
+RemoteSystemsTempFiles/**/*
+
+# Files
+.classpath
+.project
+.springBeans

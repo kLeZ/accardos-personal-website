@@ -1,0 +1,61 @@
+<!--
+    Copyright © 2017 Alessandro Accardo a.k.a. kLeZ <julius8774@gmail.com>
+
+    This file is part of AAccardo Personal WebSite.
+
+    AAccardo Personal WebSite is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    AAccardo Personal WebSite is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with AAccardo Personal WebSite.  If not, see <http://www.gnu.org/licenses/>.
+-->
+
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Alessandro Accardo - Sito Personale</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link th:href="@{/webjars/bootstrap/3.3.7/css/bootstrap.min.css}"
+	href="http://cdn.jsdelivr.net/webjars/bootstrap/3.3.7/css/bootstrap.css"
+	rel="stylesheet" media="screen" />
+<link href="../static/css/core.css" th:href="@{/css/core.css}"
+	rel="stylesheet" media="screen" />
+</head>
+<body>
+	<nav class="navbar navbar-inverse">
+		<div class="container">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#">Alessandro Accardo</a>
+			</div>
+			<div id="navbar" class="collapse navbar-collapse">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="#">Home</a></li>
+					<li><a href="#about">About</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div class="container"></div>
+	<!-- /.container -->
+
+	<footer>Copyright © 2017 Alessandro Accardo a.k.a. kLeZ &lt;julius8774@gmail.com&gt;</footer>
+	<div id="scripts">
+		<script type="text/javascript"
+			th:src="@{/webjars/jquery/2.1.4/jquery.min.js}"
+			src="http://cdn.jsdelivr.net/webjars/bootstrap/3.3.7/js/bootstrap.js"></script>
+		<script type="text/javascript"
+			th:src="@{/webjars/bootstrap/3.3.7/js/bootstrap.min.js}"
+			src="http://cdn.jsdelivr.net/webjars/bootstrap/3.3.7/js/bootstrap.js"></script>
+		<script type="text/javascript" th:src="@{/js/core.js}"
+			src="../static/js/core.js"></script>
+	</div>
+</body>
+</html>

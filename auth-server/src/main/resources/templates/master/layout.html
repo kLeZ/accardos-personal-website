@@ -1,0 +1,46 @@
+<!--
+    Copyright © 2017 Alessandro Accardo a.k.a. kLeZ <julius8774@gmail.com>
+
+    This file is part of AAccardo Personal WebSite.
+
+    AAccardo Personal WebSite is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    AAccardo Personal WebSite is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with AAccardo Personal WebSite.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+<title layout:title-pattern="$CONTENT_TITLE :: $DECORATOR_TITLE">Alessandro
+	Accardo - Sito Personale</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link th:href="@{/webjars/bootswatch-cyborg/css/bootstrap.min.css}"
+	rel="stylesheet" media="screen" />
+<link th:href="@{/webjars/bootswatch-cyborg/css/bootstrap-theme.min.css}"
+	rel="stylesheet" media="screen" />
+<link th:href="@{/css/core.css}" rel="stylesheet" media="screen" />
+<link rel="icon" th:href="@{/img/favicon.png}" type="image/png" />
+</head>
+<body>
+	<div th:replace="master/header :: header"></div>
+	<div class="container">
+		<div layout:fragment="content"></div>
+		<div th:replace="master/footer :: footer">&copy; 2017 Alessandro Accardo</div>
+	</div>
+	<div id="scripts">
+		<script type="text/javascript" th:src="@{/webjars/jquery/jquery.min.js}"></script>
+		<script type="text/javascript"
+			th:src="@{/webjars/bootswatch-cyborg/js/bootstrap.min.js}"></script>
+		<script type="text/javascript" th:src="@{/js/core.js}"></script>
+	</div>
+</body>
+</html>

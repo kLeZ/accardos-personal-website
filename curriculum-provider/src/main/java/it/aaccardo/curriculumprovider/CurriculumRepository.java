@@ -17,10 +17,8 @@
 
 package it.aaccardo.curriculumprovider;
 
-import java.util.List;
+import org.springframework.data.mongodb.repository.MongoRepository;
 
-public interface CurriculumRepository {
-	List<Curriculum> getAllCurricula();
-
-	Curriculum getCurriculum(String number);
+public interface CurriculumRepository extends MongoRepository<Curriculum, String> {
+	Curriculum findByTitle(String title);
 }

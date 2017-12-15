@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: authorization
+  datasource:
+    url: jdbc:postgresql:localhost:5432
+    username: 
+    password: 
+  thymeleaf:
+    cache: false
+server:
+  port: 1440
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:1337/eureka/

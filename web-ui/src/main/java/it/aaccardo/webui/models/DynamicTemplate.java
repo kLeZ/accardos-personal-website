@@ -15,20 +15,35 @@
 //    You should have received a copy of the GNU General Public License
 //    along with AAccardo Personal WebSite.  If not, see <http://www.gnu.org/licenses/>.
 
-package it.aaccardo.webui.controllers;
+package it.aaccardo.webui.models;
 
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.servlet.ModelAndView;
+public class DynamicTemplate {
 
-@Controller
-public class HomeController {
+	private String id;
+	private String content;
+	private boolean published;
 
-	@RequestMapping("/")
-	public ModelAndView index() {
-		ModelAndView mv = new ModelAndView();
-		mv.setViewName("index");
-		return mv;
+	public String getId() {
+		return id;
 	}
 
+	public void setId(String id) {
+		this.id = id;
+	}
+
+	public String getContent() {
+		return content;
+	}
+
+	public void setContent(String content) {
+		this.content = content;
+	}
+
+	public boolean isPublished() {
+		return published;
+	}
+
+	public void setPublished(boolean published) {
+		this.published = published;
+	}
 }

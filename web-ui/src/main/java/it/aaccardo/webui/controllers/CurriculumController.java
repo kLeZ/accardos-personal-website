@@ -17,18 +17,35 @@
 
 package it.aaccardo.webui.controllers;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
-@Controller
-public class HomeController {
+import it.aaccardo.webui.clients.CurriculumSubscriber;
 
-	@RequestMapping("/")
-	public ModelAndView index() {
+@Controller
+public class CurriculumController {
+
+	@Autowired
+	CurriculumSubscriber cv;
+
+	@RequestMapping("/cv")
+	public ModelAndView all() {
 		ModelAndView mv = new ModelAndView();
-		mv.setViewName("index");
+		mv.addObject("curricula", cv.all());
+		mv.setViewName("curriculum");
 		return mv;
 	}
 
+	@RequestMapping(path = "/cv/detail")
+	public ModelAndView get(@RequestParam String key) {
+		ModelAndView mv = new ModelAndView();
+		mv.addObject("templateId", "cv-detail");
+		mv.addObject("pageTitle", String.format("Curriculum Vitae: %s", key));
+		mv.addObject("cv", cv.byTitle(key));
+		mv.setViewName("dyn-page");
+		return mv;
+	}
 }

@@ -15,26 +15,23 @@
 //    You should have received a copy of the GNU General Public License
 //    along with AAccardo Personal WebSite.  If not, see <http://www.gnu.org/licenses/>.
 
-package it.aaccardo.curriculumprovider;
+package it.aaccardo.templatesprovider;
 
-import java.util.Date;
+public class DynamicTemplate implements RedisObject {
+	private static final long serialVersionUID = 5629112299777150913L;
+	static final String OBJECT_KEY = "DynamicTemplate";
 
-import org.springframework.data.annotation.Id;
-import org.springframework.data.mongodb.core.mapping.Document;
-
-@Document(collection = "curriculum")
-public class Curriculum {
-	@Id
 	private String id;
-	private String title;
-	private Date creationDate;
+	private String content;
+	private boolean published;
 
-	public Curriculum() {
+	public DynamicTemplate() {
 	}
 
-	public Curriculum(String title, Date creationDate) {
-		this.title = title;
-		this.creationDate = creationDate;
+	public DynamicTemplate(String id, String content) {
+		this.id = id;
+		this.content = content;
+		this.published = false;
 	}
 
 	public String getId() {
@@ -45,19 +42,29 @@ public class Curriculum {
 		this.id = id;
 	}
 
-	public String getTitle() {
-		return title;
+	public String getContent() {
+		return content;
 	}
 
-	public void setTitle(String title) {
-		this.title = title;
+	public void setContent(String content) {
+		this.content = content;
 	}
 
-	public Date getCreationDate() {
-		return creationDate;
+	public boolean isPublished() {
+		return published;
 	}
 
-	public void setCreationDate(Date creationDate) {
-		this.creationDate = creationDate;
+	public void setPublished(boolean published) {
+		this.published = published;
+	}
+
+	@Override
+	public String getKey() {
+		return getId();
+	}
+
+	@Override
+	public String getObjectKey() {
+		return OBJECT_KEY;
 	}
 }

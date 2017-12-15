@@ -18,13 +18,14 @@
 -->
 <!DOCTYPE HTML>
 <html xmlns:th="http://www.thymeleaf.org"
-	xmlns:sec="http://www.springframework.org/security/tags"
 	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
 	layout:decorator="master/layout">
 <head>
-<title>Home</title>
+<title th:text="${pageTitle}">Dynamic Page</title>
 </head>
 <body>
-	<div class="container" layout:fragment="content"></div>
+	<div class="container" layout:fragment="content">
+		<div th:replace="dyn:__${templateId}__"></div>
+	</div>
 </body>
 </html>

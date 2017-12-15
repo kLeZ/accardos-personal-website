@@ -15,29 +15,33 @@
 //    You should have received a copy of the GNU General Public License
 //    along with AAccardo Personal WebSite.  If not, see <http://www.gnu.org/licenses/>.
 
-package it.aaccardo.webui;
+package it.aaccardo.authserver;
+
+import javax.sql.DataSource;
 
 import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.jdbc.DataSourceBuilder;
+import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
-import org.springframework.cloud.netflix.feign.EnableFeignClients;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.ComponentScan;
-import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Primary;
 
+@SpringBootApplication
 @EnableDiscoveryClient
-@EnableAutoConfiguration
-@EnableFeignClients
-@Configuration
-@ComponentScan("it.aaccardo.webui")
 public class Application {
-	public static void main(String[] args) {
-		System.setProperty("spring.config.name", "web");
-		SpringApplication.run(Application.class, args);
+	/**
+	 * Main data source containing the credentials.
+	 */
+	@Bean
+	@Primary
+	@ConfigurationProperties(prefix = "spring.datasource")
+	public DataSource mainDataSource() {
+		return DataSourceBuilder.create().build();
 	}
 
-	@Bean
-	public DynamicTemplateResolver dynamicTemplateResolver() {
-		return new DynamicTemplateResolver();
+	public static void main(String[] args) {
+		System.setProperty("spring.config.name", "authorization");
+		SpringApplication.run(Application.class, args);
 	}
 }

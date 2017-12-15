@@ -18,13 +18,26 @@
 -->
 <!DOCTYPE HTML>
 <html xmlns:th="http://www.thymeleaf.org"
-	xmlns:sec="http://www.springframework.org/security/tags"
 	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
 	layout:decorator="master/layout">
 <head>
-<title>Home</title>
+<title>Curriculum Vitae</title>
 </head>
 <body>
-	<div class="container" layout:fragment="content"></div>
+	<div class="container" layout:fragment="content">
+		<h1>Lista dei curriculum</h1>
+		<div class="table responsive">
+			<table class="table table-striped table-bordered table-hover">
+				<tr>
+					<th>Titolo</th>
+					<th>Data di creazione</th>
+				</tr>
+				<tr th:each="cv : ${curricula}">
+					<td><a th:href="@{/cv/detail?key={key}(key=${cv.title})}" th:text="${cv.title}">Il mio curriculum personale</a></td>
+					<td th:text="${cv.creationDate}">31/12/2000</td>
+				</tr>
+			</table>
+		</div>
+	</div>
 </body>
 </html>

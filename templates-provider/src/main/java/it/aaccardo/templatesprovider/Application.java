@@ -15,29 +15,39 @@
 //    You should have received a copy of the GNU General Public License
 //    along with AAccardo Personal WebSite.  If not, see <http://www.gnu.org/licenses/>.
 
-package it.aaccardo.webui;
+package it.aaccardo.templatesprovider;
 
 import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
-import org.springframework.cloud.netflix.feign.EnableFeignClients;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.ComponentScan;
-import org.springframework.context.annotation.Configuration;
+import org.springframework.data.redis.connection.jedis.JedisConnectionFactory;
+import org.springframework.data.redis.core.RedisTemplate;
 
+@SpringBootApplication
 @EnableDiscoveryClient
-@EnableAutoConfiguration
-@EnableFeignClients
-@Configuration
-@ComponentScan("it.aaccardo.webui")
 public class Application {
-	public static void main(String[] args) {
-		System.setProperty("spring.config.name", "web");
+	public static void main(String[] args) throws Exception {
+		System.setProperty("spring.config.name", "templates");
 		SpringApplication.run(Application.class, args);
 	}
 
 	@Bean
-	public DynamicTemplateResolver dynamicTemplateResolver() {
-		return new DynamicTemplateResolver();
+	JedisConnectionFactory jedisConnectionFactory() {
+		return new JedisConnectionFactory();
+	}
+
+	@Bean
+	public RedisTemplate<String, DynamicTemplate> redisTemplate() {
+		RedisTemplate<String, DynamicTemplate> template = new RedisTemplate<>();
+		template.setConnectionFactory(jedisConnectionFactory());
+		return template;
+	}
+
+	@Bean
+	public DynamicTemplateRepository dynamicTemplateRepository() {
+		DynamicTemplateRepository repo = new DynamicTemplateRepository();
+		repo.setRedisTemplate(redisTemplate());
+		return repo;
 	}
 }

@@ -15,25 +15,44 @@
 //    You should have received a copy of the GNU General Public License
 //    along with AAccardo Personal WebSite.  If not, see <http://www.gnu.org/licenses/>.
 
-package it.aaccardo.curriculumprovider;
+package it.aaccardo.webui.models;
 
-import java.util.List;
+import java.util.Date;
 
-import org.springframework.stereotype.Repository;
+public class Curriculum {
+	private String id;
+	private String title;
+	private Date creationDate;
 
-@Repository
-public class StubCurriculumRepository implements CurriculumRepository {
-
-	@Override
-	public List<Curriculum> getAllCurricula() {
-		// TODO Auto-generated method stub
-		return null;
+	public Curriculum() {
 	}
 
-	@Override
-	public Curriculum getCurriculum(String number) {
-		// TODO Auto-generated method stub
-		return null;
+	public Curriculum(String title, Date creationDate) {
+		this.title = title;
+		this.creationDate = creationDate;
 	}
 
+	public String getId() {
+		return id;
+	}
+
+	public void setId(String id) {
+		this.id = id;
+	}
+
+	public String getTitle() {
+		return title;
+	}
+
+	public void setTitle(String title) {
+		this.title = title;
+	}
+
+	public Date getCreationDate() {
+		return creationDate;
+	}
+
+	public void setCreationDate(Date creationDate) {
+		this.creationDate = creationDate;
+	}
 }

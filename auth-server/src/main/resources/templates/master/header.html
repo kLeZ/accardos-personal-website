@@ -18,13 +18,21 @@
 -->
 <!DOCTYPE HTML>
 <html xmlns:th="http://www.thymeleaf.org"
-	xmlns:sec="http://www.springframework.org/security/tags"
-	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
-	layout:decorator="master/layout">
-<head>
-<title>Home</title>
-</head>
+	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head></head>
 <body>
-	<div class="container" layout:fragment="content"></div>
+	<nav class="navbar navbar-inverse" th:fragment="header">
+		<div class="container">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="/">OAuth Server</a>
+			</div>
+			<div id="navbar" class="collapse navbar-collapse">
+				<ul class="nav navbar-nav" th:with="view=${#httpServletRequest.getServletPath()}">
+					<li th:classappend="${#strings.equals(view,'/')? 'active' : ''}"><a th:href="@{/}">Home</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
 </body>
 </html>

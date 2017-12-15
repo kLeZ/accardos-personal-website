@@ -15,29 +15,16 @@
 //    You should have received a copy of the GNU General Public License
 //    along with AAccardo Personal WebSite.  If not, see <http://www.gnu.org/licenses/>.
 
-package it.aaccardo.webui;
+package it.aaccardo.curriculumprovider;
 
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
-import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
-import org.springframework.cloud.netflix.feign.EnableFeignClients;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.ComponentScan;
-import org.springframework.context.annotation.Configuration;
+public class CurriculumNotFoundException extends Exception {
 
-@EnableDiscoveryClient
-@EnableAutoConfiguration
-@EnableFeignClients
-@Configuration
-@ComponentScan("it.aaccardo.webui")
-public class Application {
-	public static void main(String[] args) {
-		System.setProperty("spring.config.name", "web");
-		SpringApplication.run(Application.class, args);
-	}
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -8283417163810003788L;
 
-	@Bean
-	public DynamicTemplateResolver dynamicTemplateResolver() {
-		return new DynamicTemplateResolver();
+	public CurriculumNotFoundException(String title) {
+		super(String.format("Cannot find curriculum named '%s'", title));
 	}
 }

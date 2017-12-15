@@ -15,20 +15,12 @@
 //    You should have received a copy of the GNU General Public License
 //    along with AAccardo Personal WebSite.  If not, see <http://www.gnu.org/licenses/>.
 
-package it.aaccardo.webui.controllers;
+package it.aaccardo.templatesprovider;
 
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.servlet.ModelAndView;
+public class DuplicateTemplateException extends Exception {
+	private static final long serialVersionUID = -1967933085247900440L;
 
-@Controller
-public class HomeController {
-
-	@RequestMapping("/")
-	public ModelAndView index() {
-		ModelAndView mv = new ModelAndView();
-		mv.setViewName("index");
-		return mv;
+	public DuplicateTemplateException(String templateKey) {
+		super(String.format("The template key '%s' is already present in the database!", templateKey));
 	}
-
 }

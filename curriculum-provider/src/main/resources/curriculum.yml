@@ -1,0 +1,20 @@
+server:
+  port: 1338
+spring:
+  application:
+    name: curriculum
+  data:
+    mongodb:
+      repositories:
+        enabled: true
+      host: localhost
+      port: 27017
+      database: CV
+      username: curriculum-provider
+      password: cv-prov
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:1337/eureka/
+  instance:
+    preferIpAddress: true

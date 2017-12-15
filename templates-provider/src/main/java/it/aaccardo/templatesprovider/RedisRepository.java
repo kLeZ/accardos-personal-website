@@ -15,20 +15,17 @@
 //    You should have received a copy of the GNU General Public License
 //    along with AAccardo Personal WebSite.  If not, see <http://www.gnu.org/licenses/>.
 
-package it.aaccardo.webui.controllers;
+package it.aaccardo.templatesprovider;
 
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.servlet.ModelAndView;
+import java.util.List;
 
-@Controller
-public class HomeController {
+public interface RedisRepository<V extends RedisObject> {
 
-	@RequestMapping("/")
-	public ModelAndView index() {
-		ModelAndView mv = new ModelAndView();
-		mv.setViewName("index");
-		return mv;
-	}
+	void put(V obj);
 
+	V get(V key);
+
+	void delete(V key);
+
+	List<V> getObjects();
 }

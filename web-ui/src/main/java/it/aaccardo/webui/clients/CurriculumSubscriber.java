@@ -15,54 +15,32 @@
 //    You should have received a copy of the GNU General Public License
 //    along with AAccardo Personal WebSite.  If not, see <http://www.gnu.org/licenses/>.
 
-package it.aaccardo.curriculumprovider;
+package it.aaccardo.webui.clients;
 
 import java.util.List;
-import java.util.logging.Logger;
 
-import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cloud.netflix.feign.FeignClient;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
 
-@RestController
-public class CurriculumController {
-	protected Logger log = Logger.getLogger(CurriculumController.class.getName());
+import it.aaccardo.webui.models.Curriculum;
 
-	@Autowired
-	CurriculumRepository repository;
-
+@FeignClient("http://curriculum")
+public interface CurriculumSubscriber {
 	@RequestMapping(value = "/curricula", method = RequestMethod.GET)
-	public List<Curriculum> all() {
-		return repository.findAll();
-	}
+	List<Curriculum> all();
 
 	@RequestMapping(value = "/curricula/{title}", method = RequestMethod.GET)
-	public Curriculum byTitle(@PathVariable String title) throws CurriculumNotFoundException {
-		Curriculum curriculum = repository.findByTitle(title);
-		if (curriculum != null) {
-			return curriculum;
-		} else {
-			throw new CurriculumNotFoundException(title);
-		}
-	}
+	Curriculum byTitle(@PathVariable("title") String title);
 
 	@RequestMapping(value = "/curricula/new", method = RequestMethod.POST)
-	public Curriculum create(@RequestBody Curriculum newCurriculum) {
-		newCurriculum.setId(null);
-		return repository.save(newCurriculum);
-	}
+	Curriculum create(@RequestBody Curriculum newCurriculum);
 
 	@RequestMapping(value = "/curricula/{id}", method = RequestMethod.PUT)
-	public Curriculum update(@PathVariable String id, @RequestBody Curriculum updatedCurriculum) {
-		updatedCurriculum.setId(id);
-		return repository.save(updatedCurriculum);
-	}
+	Curriculum update(@PathVariable("id") String id, @RequestBody Curriculum updatedCurriculum);
 
 	@RequestMapping(value = "/curricula/{id}", method = RequestMethod.DELETE)
-	public void remove(@PathVariable String id) {
-		repository.delete(id);
-	}
+	void remove(@PathVariable("id") String id);
 }

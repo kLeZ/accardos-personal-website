@@ -15,20 +15,12 @@
 //    You should have received a copy of the GNU General Public License
 //    along with AAccardo Personal WebSite.  If not, see <http://www.gnu.org/licenses/>.
 
-package it.aaccardo.webui.controllers;
+package it.aaccardo.templatesprovider;
 
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.servlet.ModelAndView;
+public class DynamicTemplateNotFoundException extends Exception {
+	private static final long serialVersionUID = 2255629753793387793L;
 
-@Controller
-public class HomeController {
-
-	@RequestMapping("/")
-	public ModelAndView index() {
-		ModelAndView mv = new ModelAndView();
-		mv.setViewName("index");
-		return mv;
+	public DynamicTemplateNotFoundException(String templateKey) {
+		super(String.format("Cannot find template '%s'", templateKey));
 	}
-
 }

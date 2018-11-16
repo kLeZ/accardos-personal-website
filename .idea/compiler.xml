@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="auth-server" />
+        <module name="curriculum-provider" />
+        <module name="discovery-server" />
+        <module name="templates-provider" />
+        <module name="web-ui" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="auth-server" target="1.8" />
+      <module name="curriculum-provider" target="1.8" />
+      <module name="discovery-server" target="1.8" />
+      <module name="templates-provider" target="1.8" />
+      <module name="web-ui" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

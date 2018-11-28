@@ -19,22 +19,22 @@
 
 package it.aaccardo.curriculumprovider;
 
-import java.util.Date;
-
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-@Document(collection = "curriculum")
+import java.time.LocalDateTime;
+
+@Document(collection = "curricula")
 public class Curriculum {
 	@Id
 	private String id;
 	private String title;
-	private Date creationDate;
+	private LocalDateTime creationDate;
 
 	public Curriculum() {
 	}
 
-	public Curriculum(String title, Date creationDate) {
+	public Curriculum(String title, LocalDateTime creationDate) {
 		this.title = title;
 		this.creationDate = creationDate;
 	}
@@ -55,11 +55,11 @@ public class Curriculum {
 		this.title = title;
 	}
 
-	public Date getCreationDate() {
+	public LocalDateTime getCreationDate() {
 		return creationDate;
 	}
 
-	public void setCreationDate(Date creationDate) {
+	public void setCreationDate(LocalDateTime creationDate) {
 		this.creationDate = creationDate;
 	}
 }

@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/auth-server/auth-server.iml" filepath="$PROJECT_DIR$/auth-server/auth-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/curriculum-provider/curriculum-provider.iml" filepath="$PROJECT_DIR$/curriculum-provider/curriculum-provider.iml" />
       <module fileurl="file://$PROJECT_DIR$/discovery-server/discovery-server.iml" filepath="$PROJECT_DIR$/discovery-server/discovery-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pages-provider/pages-provider.iml" filepath="$PROJECT_DIR$/pages-provider/pages-provider.iml" />
       <module fileurl="file://$PROJECT_DIR$/templates-provider/templates-provider.iml" filepath="$PROJECT_DIR$/templates-provider/templates-provider.iml" />
       <module fileurl="file://$PROJECT_DIR$/web-ui/web-ui.iml" filepath="$PROJECT_DIR$/web-ui/web-ui.iml" />
     </modules>

@@ -19,26 +19,67 @@
 
 package it.aaccardo.webui;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.thymeleaf.ThymeleafProperties;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
-import org.springframework.cloud.netflix.feign.EnableFeignClients;
+import org.springframework.cloud.openfeign.EnableFeignClients;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.web.servlet.ViewResolver;
+import org.thymeleaf.spring5.ISpringTemplateEngine;
+import org.thymeleaf.spring5.SpringTemplateEngine;
+import org.thymeleaf.spring5.templateresolver.SpringResourceTemplateResolver;
+import org.thymeleaf.spring5.view.ThymeleafViewResolver;
+import org.thymeleaf.templatemode.TemplateMode;
+import org.thymeleaf.templateresolver.ITemplateResolver;
+import org.thymeleaf.templateresolver.UrlTemplateResolver;
 
+@SpringBootApplication
 @EnableDiscoveryClient
-@EnableAutoConfiguration
 @EnableFeignClients
 @Configuration
-@ComponentScan("it.aaccardo.webui")
 public class Application {
+	@Autowired
+	ThymeleafProperties properties;
+
 	public static void main(String[] args) {
 		System.setProperty("spring.config.name", "web");
 		SpringApplication.run(Application.class, args);
 	}
 
 	@Bean
+	public ViewResolver viewResolver() {
+		ThymeleafViewResolver resolver = new ThymeleafViewResolver();
+		resolver.setTemplateEngine(templateEngine());
+		resolver.setCharacterEncoding("UTF-8");
+		return resolver;
+	}
+
+	private ISpringTemplateEngine templateEngine() {
+		SpringTemplateEngine engine = new SpringTemplateEngine();
+		engine.addTemplateResolver(urlTemplateResolver());
+		engine.addTemplateResolver(templateResolver());
+		engine.addTemplateResolver(dynamicTemplateResolver());
+		// pre-initialize the template engine by getting the configuration.  It's a side-effect.
+		engine.getConfiguration();
+		return engine;
+	}
+
+	private ITemplateResolver templateResolver() {
+		SpringResourceTemplateResolver resolver = new SpringResourceTemplateResolver();
+		resolver.setPrefix("classpath:templates/");
+		resolver.setSuffix(".html");
+		resolver.setTemplateMode(TemplateMode.HTML);
+		resolver.setCacheable(properties.isCache());
+		return resolver;
+	}
+
+	private UrlTemplateResolver urlTemplateResolver() {
+		return new UrlTemplateResolver();
+	}
+
 	public DynamicTemplateResolver dynamicTemplateResolver() {
 		return new DynamicTemplateResolver();
 	}

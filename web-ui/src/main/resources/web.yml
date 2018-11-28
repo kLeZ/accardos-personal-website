@@ -9,3 +9,6 @@ eureka:
       defaultZone: http://localhost:1337/eureka/
 server:
   port: 8080
+logging:
+  level:
+    it.aaccardo.webui.clients: DEBUG

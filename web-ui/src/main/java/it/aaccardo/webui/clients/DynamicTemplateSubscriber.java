@@ -19,30 +19,29 @@
 
 package it.aaccardo.webui.clients;
 
-import java.util.List;
-
-import org.springframework.cloud.netflix.feign.FeignClient;
+import it.aaccardo.webui.models.DynamicTemplate;
+import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import it.aaccardo.webui.models.DynamicTemplate;
+import java.util.List;
 
-@FeignClient("http://templates")
+@FeignClient("templates")
 public interface DynamicTemplateSubscriber {
 	@RequestMapping(value = "/templates", method = RequestMethod.GET)
 	List<DynamicTemplate> all();
 
 	@RequestMapping(value = "/templates/{key}", method = RequestMethod.GET)
-	DynamicTemplate get(@PathVariable("key") String key);
+	DynamicTemplate get(@PathVariable(name = "key") String key);
 
 	@RequestMapping(value = "/templates/new", method = RequestMethod.POST)
 	DynamicTemplate create(@RequestBody DynamicTemplate newTemplate);
 
 	@RequestMapping(value = "/templates/{key}", method = RequestMethod.PUT)
-	DynamicTemplate update(@PathVariable("key") String key, @RequestBody DynamicTemplate updatedTemplate);
+	DynamicTemplate update(@PathVariable(name = "key") String key, @RequestBody DynamicTemplate updatedTemplate);
 
 	@RequestMapping(value = "/templates/{key}", method = RequestMethod.DELETE)
-	void remove(@PathVariable("key") String key);
+	void remove(@PathVariable(name = "key") String key);
 }

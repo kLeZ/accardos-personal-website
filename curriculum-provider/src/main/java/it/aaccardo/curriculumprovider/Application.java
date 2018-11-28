@@ -22,12 +22,28 @@ package it.aaccardo.curriculumprovider;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
+import org.springframework.context.annotation.Bean;
+import org.springframework.core.convert.converter.Converter;
+import org.springframework.data.mongodb.core.convert.MongoCustomConversions;
+
+import java.util.ArrayList;
+import java.util.List;
 
 @SpringBootApplication
 @EnableDiscoveryClient
 public class Application {
-	public static void main(String[] args) throws Exception {
+	public static void main(String[] args) {
 		System.setProperty("spring.config.name", "curriculum");
 		SpringApplication.run(Application.class, args);
+	}
+
+	@Bean
+	public MongoCustomConversions customConversions() {
+		List<Converter<?, ?>> converters = new ArrayList<>();
+		converters.add(new LocalDateTimeToStringConverter());
+		converters.add(new StringToLocalDateTimeConverter());
+		converters.add(new LocalDateToStringConverter());
+		converters.add(new StringToLocalDateConverter());
+		return new MongoCustomConversions(converters);
 	}
 }

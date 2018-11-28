@@ -19,6 +19,7 @@
 
 package it.aaccardo.templatesprovider;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
@@ -29,14 +30,31 @@ import org.springframework.data.redis.core.RedisTemplate;
 @SpringBootApplication
 @EnableDiscoveryClient
 public class Application {
-	public static void main(String[] args) throws Exception {
+	@Value("${spring.data.host}")
+	private String host;
+
+	@Value("${spring.data.port}")
+	private int port;
+
+	@Value("${spring.data.redis.password}")
+	private String password;
+
+	@Value("${spring.data.redis.usePool}")
+	private boolean usePool;
+
+	public static void main(String[] args) {
 		System.setProperty("spring.config.name", "templates");
 		SpringApplication.run(Application.class, args);
 	}
 
 	@Bean
 	JedisConnectionFactory jedisConnectionFactory() {
-		return new JedisConnectionFactory();
+		JedisConnectionFactory fac = new JedisConnectionFactory();
+		fac.setHostName(host);
+		fac.setPort(port);
+		fac.setPassword(password);
+		fac.setUsePool(usePool);
+		return fac;
 	}
 
 	@Bean

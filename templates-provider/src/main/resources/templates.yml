@@ -4,6 +4,9 @@ spring:
   data:
     host: localhost
     port: 6379
+    redis:
+      password: templates-provider
+      usePool: true
 eureka:
   client:
     serviceUrl:

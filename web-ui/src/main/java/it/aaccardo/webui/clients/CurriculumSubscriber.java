@@ -19,30 +19,29 @@
 
 package it.aaccardo.webui.clients;
 
-import java.util.List;
-
-import org.springframework.cloud.netflix.feign.FeignClient;
+import it.aaccardo.webui.models.Curriculum;
+import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import it.aaccardo.webui.models.Curriculum;
+import java.util.List;
 
-@FeignClient("http://curriculum")
+@FeignClient("curriculum")
 public interface CurriculumSubscriber {
 	@RequestMapping(value = "/curricula", method = RequestMethod.GET)
 	List<Curriculum> all();
 
 	@RequestMapping(value = "/curricula/{title}", method = RequestMethod.GET)
-	Curriculum byTitle(@PathVariable("title") String title);
+	Curriculum byTitle(@PathVariable(name = "title") String title);
 
 	@RequestMapping(value = "/curricula/new", method = RequestMethod.POST)
 	Curriculum create(@RequestBody Curriculum newCurriculum);
 
 	@RequestMapping(value = "/curricula/{id}", method = RequestMethod.PUT)
-	Curriculum update(@PathVariable("id") String id, @RequestBody Curriculum updatedCurriculum);
+	Curriculum update(@PathVariable(name = "id") String id, @RequestBody Curriculum updatedCurriculum);
 
 	@RequestMapping(value = "/curricula/{id}", method = RequestMethod.DELETE)
-	void remove(@PathVariable("id") String id);
+	void remove(@PathVariable(name = "id") String id);
 }

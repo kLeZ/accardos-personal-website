@@ -18,14 +18,17 @@
   -->
 <!DOCTYPE HTML>
 <html xmlns:th="http://www.thymeleaf.org"
-	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
-	layout:decorator="master/layout">
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorator="master/layout">
 <head>
 <title>Curriculum Vitae</title>
 </head>
 <body>
 	<div class="container" layout:fragment="content">
-		<h1>Lista dei curriculum</h1>
+		<h1>
+			Lista
+			dei
+			page</h1>
 		<div class="table responsive">
 			<table class="table table-striped table-bordered table-hover">
 				<tr>
@@ -33,7 +36,13 @@
 					<th>Data di creazione</th>
 				</tr>
 				<tr th:each="cv : ${curricula}">
-					<td><a th:href="@{/cv/detail?key={key}(key=${cv.title})}" th:text="${cv.title}">Il mio curriculum personale</a></td>
+					<td>
+						<a th:href="@{/cv/detail?key={key}(key=${cv.title})}"
+						   th:text="${cv.title}">Il
+							mio
+							page
+							personale</a>
+					</td>
 					<td th:text="${cv.creationDate}">31/12/2000</td>
 				</tr>
 			</table>

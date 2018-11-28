@@ -19,55 +19,109 @@
 
 package it.aaccardo.webui;
 
-import java.io.ByteArrayInputStream;
-import java.io.InputStream;
-
-import org.springframework.beans.factory.annotation.Autowired;
-import org.thymeleaf.TemplateProcessingParameters;
-import org.thymeleaf.resourceresolver.IResourceResolver;
-import org.thymeleaf.templateresolver.TemplateResolver;
-
-import com.google.common.collect.Sets;
-
 import it.aaccardo.webui.clients.DynamicTemplateSubscriber;
 import it.aaccardo.webui.models.DynamicTemplate;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+import org.thymeleaf.IEngineConfiguration;
+import org.thymeleaf.cache.ICacheEntryValidity;
+import org.thymeleaf.templatemode.TemplateMode;
+import org.thymeleaf.templateresolver.AbstractTemplateResolver;
+import org.thymeleaf.templateresource.ITemplateResource;
 
-public class DynamicTemplateResolver extends TemplateResolver {
+import java.io.Reader;
+import java.io.StringReader;
+import java.util.HashSet;
+import java.util.Map;
+
+@Component
+public class DynamicTemplateResolver extends AbstractTemplateResolver {
+	public static final Logger log = LoggerFactory.getLogger(DynamicTemplateResolver.class);
+	private final static String PREFIX = "dyn:";
 
 	@Autowired
 	DynamicTemplateSubscriber templates;
 
-	private final static String PREFIX = "dyn:";
-
 	public DynamicTemplateResolver() {
-		setResourceResolver(new DynamicResourceResolver());
-		setResolvablePatterns(Sets.newHashSet(PREFIX + "*"));
+		log.info("DynamicTemplateResolver ctor()");
+		HashSet<String> patterns = new HashSet<>();
+		patterns.add(PREFIX + "*");
+		setResolvablePatterns(patterns);
 	}
 
 	@Override
-	protected String computeResourceName(TemplateProcessingParameters params) {
-		String templateName = params.getTemplateName();
-		return templateName.substring(PREFIX.length());
+	protected ITemplateResource computeTemplateResource(IEngineConfiguration configuration, String ownerTemplate, String template, Map<String, Object> templateResolutionAttributes) {
+		log.info(String.format("computeTemplateResource { template: %s, ownerTemplate: %s }", template, ownerTemplate));
+		return new DynamicTemplateResource(template.substring(PREFIX.length()));
 	}
 
-	private class DynamicResourceResolver implements IResourceResolver {
+	@Override
+	protected TemplateMode computeTemplateMode(IEngineConfiguration configuration, String ownerTemplate, String template, Map<String, Object> templateResolutionAttributes) {
+		log.info(String.format("computeTemplateMode { template: %s, ownerTemplate: %s }", template, ownerTemplate));
+		return TemplateMode.HTML;
+	}
 
-		@Override
-		public InputStream getResourceAsStream(TemplateProcessingParameters params, String resourceName) {
-			//DynamicTemplate template = templates.get(resourceName);
-			DynamicTemplate template = new DynamicTemplate();
-			template.setPublished(true);
-			template.setId(resourceName);
-			template.setContent(String.format("<h1>Hello %s!</h1>", resourceName));
-			if (template != null) {
-				return new ByteArrayInputStream(template.getContent().getBytes());
+	@Override
+	protected ICacheEntryValidity computeValidity(IEngineConfiguration configuration, String ownerTemplate, String template, Map<String, Object> templateResolutionAttributes) {
+		log.info(String.format("computeValidity { template: %s, ownerTemplate: %s }", template, ownerTemplate));
+		return new ICacheEntryValidity() {
+			@Override
+			public boolean isCacheable() {
+				return false;
 			}
-			return null;
+
+			@Override
+			public boolean isCacheStillValid() {
+				return false;
+			}
+		};
+	}
+
+	private class DynamicTemplateResource implements ITemplateResource {
+		String baseName;
+
+		DynamicTemplateResource(String template) {
+			this.baseName = template;
 		}
 
 		@Override
-		public String getName() {
-			return "dynResourceResolver";
+		public String getDescription() {
+			return "";
+		}
+
+		@Override
+		public String getBaseName() {
+			return baseName;
+		}
+
+		@Override
+		public boolean exists() {
+			return true;
+		}
+
+		@Override
+		public Reader reader() {
+			log.info(String.format("DynamicTemplateResource.render(%s)", this.getBaseName()));
+			StringReader ret = null;
+			if (templates != null) {
+				try {
+					DynamicTemplate template = templates.get(this.getBaseName());
+					if (template != null) {
+						ret = new StringReader(template.getContent());
+					}
+				} catch (Exception e) {
+					log.error("There was a problem with loading the template from the source", e);
+				}
+			}
+			// Gli fanno schifo i template vuoti, deve sempre esserci qualcosa dentro.
+			return ret == null ? new StringReader(String.format("<h1>%s</h1>", this.getBaseName())) : ret;
+		}
+
+		@Override
+		public ITemplateResource relative(String relativeLocation) {
+			return this;
 		}
 	}
 }

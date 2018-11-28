@@ -1,0 +1,21 @@
+server:
+  port: 1341
+spring:
+  application:
+    name: pages
+  data:
+    mongodb:
+      repositories:
+        enabled: true
+      host: localhost
+      port: 27017
+      database: Pages
+      username: pages-provider
+      password: pages-prov
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:1337/eureka/
+
+  instance:
+    preferIpAddress: true

@@ -20,11 +20,15 @@
 package it.aaccardo.webui.controllers;
 
 import it.aaccardo.webui.clients.PagesSubscriber;
+import it.aaccardo.webui.models.NewPage;
 import it.aaccardo.webui.models.Page;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.HandlerMapping;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.util.UriTemplate;
@@ -32,31 +36,58 @@ import org.springframework.web.util.UriTemplate;
 import javax.servlet.http.HttpServletRequest;
 import java.util.Map;
 
+@Slf4j
 @Controller
 public class PagesController {
+
 	@Autowired
 	private PagesSubscriber pages;
 
-	@RequestMapping("**/pages/{template}")
-	public ModelAndView pages(@PathVariable String template, final HttpServletRequest request) {
-		ModelAndView mv = new ModelAndView();
-
+	private String getPath(final HttpServletRequest request) {
+		String ret = "";
 		String restOfTheUrl = (String) request.getAttribute(HandlerMapping.PATH_WITHIN_HANDLER_MAPPING_ATTRIBUTE);
 		UriTemplate uritemplate = new UriTemplate("{value}/pages/{template}");
 		boolean isTemplateMatched = uritemplate.matches(restOfTheUrl);
 		if (isTemplateMatched) {
 			Map<String, String> matchTemplate = uritemplate.match(restOfTheUrl);
-			String value = matchTemplate.get("value");
-			if (!value.isEmpty()) {
-				//mv.addObject("pageTitle", String.format("%s » %s", value.substring(1).replace("/", " » "), template));
-				template = String.format("%s_%s", value.substring(1).replace('/', '-'), template);
-			}
+			ret = matchTemplate.get("value");
 		}
-		Page page = pages.byTitle(template);
-		mv.addObject("pageTitle", page.getTitle());
+		return ret;
+	}
+
+	@RequestMapping("**/pages/{template}")
+	public ModelAndView getPage(@PathVariable String template, final HttpServletRequest request) {
+		ModelAndView mv = new ModelAndView();
+		String pageTitle = "";
+		String value = getPath(request);
+		if (!value.isEmpty()) {
+			pageTitle = String.format("%s » %s", value.substring(1).replace("/", " » "), template);
+			template = String.format("%s_%s", value.substring(1).replace('/', '-'), template);
+		}
+		try {
+			Page page = pages.byTitle(template);
+			pageTitle = page.getTitle();
+		} catch (Exception e) {
+			log.error("Page not found", e);
+		}
+		mv.addObject("pageTitle", pageTitle);
 		mv.addObject("templateId", template);
 		mv.setViewName("dyn-page");
 		return mv;
 	}
 
+	@RequestMapping(value = "**/pages/new", method = RequestMethod.GET)
+	public ModelAndView newPage() {
+		ModelAndView mv = new ModelAndView();
+		mv.setViewName("pages/new-page");
+		return mv;
+	}
+
+	@RequestMapping(value = "**/pages/new", method = RequestMethod.POST)
+	public String saveNewPage(@ModelAttribute NewPage page, final HttpServletRequest request) {
+		String path = getPath(request);
+		String template = page.getTemplate();
+		log.info(page.toString());
+		return String.format("redirect:%s/pages/%s", path, template);
+	}
 }

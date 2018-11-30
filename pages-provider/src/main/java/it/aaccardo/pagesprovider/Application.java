@@ -41,9 +41,7 @@ public class Application {
 	public MongoCustomConversions customConversions() {
 		List<Converter<?, ?>> converters = new ArrayList<>();
 		converters.add(new LocalDateTimeToStringConverter());
-		converters.add(new StringToLocalDateTimeConverter());
 		converters.add(new LocalDateToStringConverter());
-		converters.add(new StringToLocalDateConverter());
 		return new MongoCustomConversions(converters);
 	}
 }

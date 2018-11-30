@@ -19,7 +19,7 @@
 
 package it.aaccardo.webui.clients;
 
-import it.aaccardo.webui.models.DynamicTemplate;
+import it.aaccardo.webui.models.Template;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -29,18 +29,18 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import java.util.List;
 
 @FeignClient("templates")
-public interface DynamicTemplateSubscriber {
+public interface TemplatesSubscriber {
 	@RequestMapping(value = "/templates", method = RequestMethod.GET)
-	List<DynamicTemplate> all();
+	List<Template> all();
 
 	@RequestMapping(value = "/templates/{key}", method = RequestMethod.GET)
-	DynamicTemplate get(@PathVariable(name = "key") String key);
+	Template get(@PathVariable(name = "key") String key);
 
 	@RequestMapping(value = "/templates/new", method = RequestMethod.POST)
-	DynamicTemplate create(@RequestBody DynamicTemplate newTemplate);
+	Template create(@RequestBody Template newTemplate);
 
 	@RequestMapping(value = "/templates/{key}", method = RequestMethod.PUT)
-	DynamicTemplate update(@PathVariable(name = "key") String key, @RequestBody DynamicTemplate updatedTemplate);
+	Template update(@PathVariable(name = "key") String key, @RequestBody Template updatedTemplate);
 
 	@RequestMapping(value = "/templates/{key}", method = RequestMethod.DELETE)
 	void remove(@PathVariable(name = "key") String key);

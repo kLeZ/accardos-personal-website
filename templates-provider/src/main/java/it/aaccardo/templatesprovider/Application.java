@@ -58,15 +58,15 @@ public class Application {
 	}
 
 	@Bean
-	public RedisTemplate<String, DynamicTemplate> redisTemplate() {
-		RedisTemplate<String, DynamicTemplate> template = new RedisTemplate<>();
+	public RedisTemplate<String, Template> redisTemplate() {
+		RedisTemplate<String, Template> template = new RedisTemplate<>();
 		template.setConnectionFactory(jedisConnectionFactory());
 		return template;
 	}
 
 	@Bean
-	public DynamicTemplateRepository dynamicTemplateRepository() {
-		DynamicTemplateRepository repo = new DynamicTemplateRepository();
+	public TemplateRepository templateRepository() {
+		TemplateRepository repo = new TemplateRepository();
 		repo.setRedisTemplate(redisTemplate());
 		return repo;
 	}

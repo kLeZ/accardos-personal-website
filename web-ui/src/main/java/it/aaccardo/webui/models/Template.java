@@ -17,12 +17,11 @@
  *
  */
 
-package it.aaccardo.templatesprovider;
+package it.aaccardo.webui.models;
 
-public class DynamicTemplateNotFoundException extends Exception {
-	private static final long serialVersionUID = 2255629753793387793L;
-
-	public DynamicTemplateNotFoundException(String templateKey) {
-		super(String.format("Cannot find template '%s'", templateKey));
-	}
+@lombok.Data
+public class Template {
+	private String id;
+	private String content;
+	private boolean published;
 }

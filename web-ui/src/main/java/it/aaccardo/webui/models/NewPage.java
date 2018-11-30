@@ -22,8 +22,10 @@ package it.aaccardo.webui.models;
 import java.util.Date;
 
 @lombok.Data
-public class Curriculum {
-	private String id;
+public class NewPage {
 	private String title;
+	private String template;
+	private String content;
+	private String authorLogin;
 	private Date creationDate;
 }

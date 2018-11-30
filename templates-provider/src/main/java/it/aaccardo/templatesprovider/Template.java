@@ -19,18 +19,18 @@
 
 package it.aaccardo.templatesprovider;
 
-public class DynamicTemplate implements RedisObject {
+public class Template implements RedisObject {
 	private static final long serialVersionUID = 5629112299777150913L;
-	public static final String OBJECT_KEY = "DynamicTemplate";
+	public static final String OBJECT_KEY = "Template";
 
 	private String id;
 	private String content;
 	private boolean published;
 
-	public DynamicTemplate() {
+	public Template() {
 	}
 
-	public DynamicTemplate(String id, String content) {
+	public Template(String id, String content) {
 		this.id = id;
 		this.content = content;
 		this.published = false;

@@ -80,7 +80,7 @@ public class Application {
 		return new UrlTemplateResolver();
 	}
 
-	public DynamicTemplateResolver dynamicTemplateResolver() {
-		return new DynamicTemplateResolver();
+	public TemplateResolver dynamicTemplateResolver() {
+		return new TemplateResolver();
 	}
 }

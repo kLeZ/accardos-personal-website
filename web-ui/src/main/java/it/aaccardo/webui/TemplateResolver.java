@@ -19,8 +19,8 @@
 
 package it.aaccardo.webui;
 
-import it.aaccardo.webui.clients.DynamicTemplateSubscriber;
-import it.aaccardo.webui.models.DynamicTemplate;
+import it.aaccardo.webui.clients.TemplatesSubscriber;
+import it.aaccardo.webui.models.Template;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -37,15 +37,15 @@ import java.util.HashSet;
 import java.util.Map;
 
 @Component
-public class DynamicTemplateResolver extends AbstractTemplateResolver {
-	public static final Logger log = LoggerFactory.getLogger(DynamicTemplateResolver.class);
+public class TemplateResolver extends AbstractTemplateResolver {
+	public static final Logger log = LoggerFactory.getLogger(TemplateResolver.class);
 	private final static String PREFIX = "dyn:";
 
 	@Autowired
-	DynamicTemplateSubscriber templates;
+	TemplatesSubscriber templates;
 
-	public DynamicTemplateResolver() {
-		log.info("DynamicTemplateResolver ctor()");
+	public TemplateResolver() {
+		log.info("TemplateResolver ctor()");
 		HashSet<String> patterns = new HashSet<>();
 		patterns.add(PREFIX + "*");
 		setResolvablePatterns(patterns);
@@ -107,7 +107,7 @@ public class DynamicTemplateResolver extends AbstractTemplateResolver {
 			StringReader ret = null;
 			if (templates != null) {
 				try {
-					DynamicTemplate template = templates.get(this.getBaseName());
+					Template template = templates.get(this.getBaseName());
 					if (template != null) {
 						ret = new StringReader(template.getContent());
 					}

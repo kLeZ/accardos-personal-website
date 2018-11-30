@@ -4,6 +4,7 @@
 	<contentEntry url="file://$MODULE_DIR$">
 		<excludeFolder url="file://$MODULE_DIR$/target"/>
 	</contentEntry>
+	<lib name="Maven: org.projectlombok:lombok:1.18.4" scope="PROVIDED"/>
 	<lib name="Maven: org.springframework.boot:spring-boot-starter-test:2.0.6.RELEASE" scope="TEST"/>
 	<lib name="Maven: org.yaml:snakeyaml:1.19" scope="RUNTIME"/>
 	<lib name="Maven: org.springframework.boot:spring-boot-test:2.0.6.RELEASE" scope="TEST"/>
@@ -60,6 +61,7 @@
 	<lib name="Maven: com.netflix.netflix-commons:netflix-commons-util:0.3.0" scope="RUNTIME"/>
 	<lib name="Maven: com.netflix.netflix-commons:netflix-statistics:0.1.1" scope="RUNTIME"/>
 	<levels>
+		<level name="Maven: org.projectlombok:lombok:1.18.4" value="project"/>
 		<level name="Maven: org.springframework.boot:spring-boot-starter-test:2.0.6.RELEASE" value="project"/>
 		<level name="Maven: org.springframework.boot:spring-boot-starter:2.0.6.RELEASE" value="project"/>
 		<level name="Maven: org.springframework.boot:spring-boot:2.0.6.RELEASE" value="project"/>
@@ -206,12 +208,11 @@
 		<level name="Maven: org.unbescape:unbescape:1.1.6.RELEASE" value="project"/>
 		<level name="Maven: org.thymeleaf.extras:thymeleaf-extras-springsecurity4:3.0.3.RELEASE" value="project"/>
 		<level name="Maven: org.slf4j:slf4j-api:1.7.25" value="project"/>
-		<level name="Maven: org.webjars:webjars-locator:0.30" value="project"/>
+		<level name="Maven: org.webjars:webjars-locator:0.34" value="project"/>
 		<level name="Maven: org.webjars:webjars-locator-core:0.35" value="project"/>
+		<level name="Maven: org.apache.commons:commons-lang3:3.7" value="project"/>
 		<level name="Maven: org.apache.commons:commons-compress:1.9" value="project"/>
 		<level name="Maven: com.fasterxml.jackson.core:jackson-databind:2.9.7" value="project"/>
-		<level name="Maven: org.apache.commons:commons-lang3:3.7" value="project"/>
-		<level name="Maven: org.webjars:bootstrap:3.3.7" value="project"/>
 		<level name="Maven: org.webjars:jquery:3.3.1" value="project"/>
 		<level name="Maven: org.webjars:bootswatch-cyborg:3.3.7" value="project"/>
 	</levels>

@@ -19,45 +19,45 @@
 
 package it.aaccardo.templatesprovider;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 
-public class DynamicTemplateRepository implements RedisRepository<DynamicTemplate> {
+import java.util.ArrayList;
+import java.util.List;
+
+public class TemplateRepository implements RedisRepository<Template> {
 
 	@Autowired
-	private RedisTemplate<String, DynamicTemplate> redisTemplate;
+	private RedisTemplate<String, Template> redisTemplate;
 
-	public RedisTemplate<String, DynamicTemplate> getRedisTemplate() {
+	public RedisTemplate<String, Template> getRedisTemplate() {
 		return redisTemplate;
 	}
 
-	public void setRedisTemplate(RedisTemplate<String, DynamicTemplate> redisTemplate) {
+	public void setRedisTemplate(RedisTemplate<String, Template> redisTemplate) {
 		this.redisTemplate = redisTemplate;
 	}
 
 	@Override
-	public void put(DynamicTemplate obj) {
+	public void put(Template obj) {
 		redisTemplate.opsForHash().put(obj.getObjectKey(), obj.getKey(), obj);
 	}
 
 	@Override
-	public DynamicTemplate get(DynamicTemplate key) {
-		return (DynamicTemplate) redisTemplate.opsForHash().get(key.getObjectKey(), key.getKey());
+	public Template get(Template key) {
+		return (Template) redisTemplate.opsForHash().get(key.getObjectKey(), key.getKey());
 	}
 
 	@Override
-	public void delete(DynamicTemplate key) {
+	public void delete(Template key) {
 		redisTemplate.opsForHash().delete(key.getObjectKey(), key.getKey());
 	}
 
 	@Override
-	public List<DynamicTemplate> getObjects() {
-		List<DynamicTemplate> templates = new ArrayList<>();
-		for (Object template : redisTemplate.opsForHash().values(DynamicTemplate.OBJECT_KEY)) {
-			templates.add((DynamicTemplate) template);
+	public List<Template> getObjects() {
+		List<Template> templates = new ArrayList<>();
+		for (Object template : redisTemplate.opsForHash().values(Template.OBJECT_KEY)) {
+			templates.add((Template) template);
 		}
 		return templates;
 	}

@@ -19,55 +19,51 @@
 
 package it.aaccardo.templatesprovider;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
+
 import java.util.List;
 import java.util.logging.Logger;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.RestController;
-
 @RestController
-public class DynamicTemplatesController {
-	protected Logger log = Logger.getLogger(DynamicTemplatesController.class.getName());
+public class TemplatesController {
+	protected Logger log = Logger.getLogger(TemplatesController.class.getName());
 
 	@Autowired
-	DynamicTemplateRepository repository;
+	TemplateRepository repository;
 
 	@RequestMapping(value = "/templates", method = RequestMethod.GET)
-	public List<DynamicTemplate> all() {
+	public List<Template> all() {
 		return repository.getObjects();
 	}
 
 	@RequestMapping(value = "/templates/{key}", method = RequestMethod.GET)
-	public DynamicTemplate get(@PathVariable String key) throws DynamicTemplateNotFoundException {
-		DynamicTemplate template = new DynamicTemplate();
+	public Template get(@PathVariable String key) throws TemplateNotFoundException {
+		Template template = new Template();
 		template.setId(key);
-		DynamicTemplate ret = repository.get(template);
+		Template ret = repository.get(template);
 		if (ret != null) {
 			return ret;
 		} else {
-			throw new DynamicTemplateNotFoundException(key);
+			throw new TemplateNotFoundException(key);
 		}
 	}
 
 	@RequestMapping(value = "/templates/new", method = RequestMethod.PUT)
-	public @ResponseBody void create(@RequestBody DynamicTemplate newTemplate) throws DuplicateTemplateException {
+	public @ResponseBody
+	void create(@RequestBody Template newTemplate) {
 		repository.put(newTemplate);
 	}
 
 	@RequestMapping(value = "/templates/{key}", method = RequestMethod.POST)
-	public void update(@PathVariable String key, @RequestBody DynamicTemplate updatedTemplate) {
+	public void update(@PathVariable String key, @RequestBody Template updatedTemplate) {
 		updatedTemplate.setId(key);
 		repository.put(updatedTemplate);
 	}
 
 	@RequestMapping(value = "/templates/{key}", method = RequestMethod.DELETE)
 	public void remove(@PathVariable String key) {
-		DynamicTemplate template = new DynamicTemplate();
+		Template template = new Template();
 		template.setId(key);
 		repository.delete(template);
 	}

@@ -2,16 +2,17 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="auth-server" />
-        <module name="curriculum-provider" />
-        <module name="discovery-server" />
         <module name="pages-provider" />
-        <module name="templates-provider" />
+        <module name="curriculum-provider" />
         <module name="web-ui" />
+        <module name="templates-provider" />
+        <module name="auth-server" />
+        <module name="discovery-server" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

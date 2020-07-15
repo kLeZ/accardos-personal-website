@@ -3,8 +3,8 @@ spring:
     name: authorization
   datasource:
     url: jdbc:postgresql:localhost:5432
-    username: 
-    password: 
+    username: postgres
+    password: postgres
   thymeleaf:
     cache: false
 server:

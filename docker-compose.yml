@@ -1,0 +1,34 @@
+version: '3'
+services:
+  redis:
+    image: "redis:latest"
+    container_name: "redis-personal-site"
+    command: redis-server --appendonly yes --requirepass templates-provider
+    volumes:
+      - ./data/redis:/data
+    ports:
+      - "6379:6379"
+  postgres:
+    image: postgres
+    container_name: "postgres-personal-site"
+    hostname: postgres
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: auth
+    volumes:
+      - ./data/postgres:/var/lib/postgresql/data
+  mongodb:
+    image: mongo:latest
+    container_name: "mongodb-personal-site"
+    environment:
+      - MONGO_DATA_DIR=/data/db
+      - MONGO_LOG_DIR=/dev/null
+    volumes:
+      - ./data/mongo:/data/db
+      - ./mongo-init:/docker-entrypoint-initdb.d
+    ports:
+      - 27017:27017
+    command: mongod --logpath=/dev/null # --quiet

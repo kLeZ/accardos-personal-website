@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -20,20 +23,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dab8f7c3-e84b-41bd-a336-bfa13021ba09" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/accardos-personal-website.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/mongo-init/init-cv.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/mongo-init/init-pages.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accardos-personal-website.iml" beforeDir="false" afterPath="$PROJECT_DIR$/accardos-personal-website.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/auth-server/auth-server.iml" beforeDir="false" afterPath="$PROJECT_DIR$/auth-server/auth-server.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-server/src/main/resources/authorization.yml" beforeDir="false" afterPath="$PROJECT_DIR$/auth-server/src/main/resources/authorization.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/curriculum-provider/curriculum-provider.iml" beforeDir="false" afterPath="$PROJECT_DIR$/curriculum-provider/curriculum-provider.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/discovery-server/discovery-server.iml" beforeDir="false" afterPath="$PROJECT_DIR$/discovery-server/discovery-server.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages-provider/pages-provider.iml" beforeDir="false" afterPath="$PROJECT_DIR$/pages-provider/pages-provider.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates-provider/templates-provider.iml" beforeDir="false" afterPath="$PROJECT_DIR$/templates-provider/templates-provider.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web-ui/web-ui.iml" beforeDir="false" afterPath="$PROJECT_DIR$/web-ui/web-ui.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -97,6 +94,10 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitLabServerManager">
+    <selected>-1</selected>
+    <servers />
+  </component>
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="2" />
   </component>
@@ -105,6 +106,9 @@
     <exe-path />
     <other-services-enabled>true</other-services-enabled>
     <auto-save>true</auto-save>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -117,6 +121,9 @@
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
   </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 7
+}]]></component>
   <component name="ProjectId" id="1RCOjSqJ0i8NGBt335vJm60X0mz" />
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -150,32 +157,19 @@
     <option name="showLibraryContents" value="true" />
     <option name="showVisibilityIcons" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="ExpandSpringBootJavaOptionsPanel" value="true" />
-    <property name="RequestMappingsPanelOrder0" value="0" />
-    <property name="RequestMappingsPanelOrder1" value="1" />
-    <property name="RequestMappingsPanelOrder2" value="2" />
-    <property name="RequestMappingsPanelWidth0" value="75" />
-    <property name="RequestMappingsPanelWidth1" value="75" />
-    <property name="RequestMappingsPanelWidth2" value="75" />
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="SearchEverywhereHistoryKey" value="run dash&#9;ACTION&#9;ActivateRunDashboardToolWindow&#10;rename&#9;ACTION&#9;RenameElement&#10;project&#9;ACTION&#9;ActivateProjectToolWindow&#10;replace struc&#9;ACTION&#9;StructuralSearchPlugin.StructuralReplaceAction&#10;replace&#9;ACTION&#9;Replace&#10;lombok&#9;ACTION&#9;LombokActionGroup&#10;DynamicTemplate&#9;PSI&#9;JAVA://it.aaccardo.templatesprovider.Application#dynamicTemplateRepository&#10;refactor&#9;ACTION&#9;Refactorings.QuickListPopupAction&#10;mark directory&#9;ACTION&#9;MarkRootGroup&#10;run&#9;ACTION&#9;ActivateRunDashboardToolWindow&#10;run &#9;ACTION&#9;ActivateRunDashboardToolWindow&#10;maven&#9;ACTION&#9;ActivateMavenProjectsToolWindow&#10;directory&#9;ACTION&#9;MarkRootGroup&#10;replace struct&#9;ACTION&#9;StructuralSearchPlugin.StructuralReplaceAction&#10;project struc&#9;ACTION&#9;ShowProjectStructureSettings&#10;run das&#9;ACTION&#9;ActivateRunDashboardToolWindow&#10;pages.yml&#9;FILE&#9;file:///home/klez/workspace/accardos-personal-website/pages-provider/src/main/resources/pages.yml&#10;move&#9;ACTION&#9;Move&#10;mark dir&#9;ACTION&#9;MarkRootGroup&#10;mark as&#9;ACTION&#9;MarkRootGroup&#10;save all&#9;ACTION&#9;SaveAll&#10;module&#9;ACTION&#9;ImportModule&#10;import maven&#9;ACTION&#9;Maven.Reimport&#10;import&#9;ACTION&#9;WelcomeScreen.ImportProject&#10;copyright&#9;ACTION&#9;UpdateCopyright&#10;find&#9;ACTION&#9;FindMenuGroup&#10;pageTitle&#9;PSI&#9;JAVA://ch.qos.logback.core.status.ViewStatusMessagesServletBase#getPageTitle&#10;settings&#9;ACTION&#9;ShowSettings&#10;controller&#9;null&#9;null&#10;pro&#9;ACTION&#9;ActivateProjectToolWindow&#10;pom.xml&#9;FILE&#9;file:///home/klez/workspace/accardos-personal-website/templates-provider/pom.xml&#10;pom&#9;FILE&#9;file:///home/klez/workspace/accardos-personal-website/curriculum-provider/pom.xml" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543564861332" />
-    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JAVA" />
-    <property name="last_directory_selection" value="$PROJECT_DIR$/pages-provider/src/main/java/it/aaccardo/pagesprovider" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
-    <property name="typescript.add.unambiguous.imports.on.the.fly" value="true" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "/home/klez/projects/accardos-personal-website",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.3218391",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="it.aaccardo.webui.models" />
@@ -241,6 +235,7 @@
         <option name="myRunnerSettings" />
         <option name="myRunnerParameters">
           <MavenRunnerParameters>
+            <option name="cmdOptions" />
             <option name="profiles">
               <set />
             </option>
@@ -253,6 +248,9 @@
             <option name="profilesMap">
               <map />
             </option>
+            <option name="projectsCmdOptionValues">
+              <list />
+            </option>
             <option name="resolveToWorkspace" value="false" />
             <option name="workingDirPath" value="$PROJECT_DIR$/web-ui" />
           </MavenRunnerParameters>
@@ -263,7 +261,6 @@
     <configuration name="Auth" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="auth-server" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="it.aaccardo.authserver.Application" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -271,13 +268,11 @@
     <configuration name="Curriculum" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="curriculum-provider" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="it.aaccardo.curriculumprovider.Application" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method v="2" />
     </configuration>
     <configuration name="Eureka" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="discovery-server" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="it.aaccardo.discoveryserver.Application" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -285,19 +280,16 @@
     <configuration name="Pages" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="pages-provider" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="it.aaccardo.pagesprovider.Application" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method v="2" />
     </configuration>
     <configuration name="Templates" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="templates-provider" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="it.aaccardo.templatesprovider.Application" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method v="2" />
     </configuration>
     <configuration name="WebUI" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="web-ui" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="it.aaccardo.webui.Application" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -313,6 +305,7 @@
     <list>
       <item itemvalue="Application.Application" />
       <item itemvalue="Cucumber Java.All Features in: templates-provider" />
+      <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
       <item itemvalue="Maven.web-ui [clean]" />
       <item itemvalue="Spring Boot.Auth" />
       <item itemvalue="Spring Boot.WebUI" />
@@ -320,7 +313,6 @@
       <item itemvalue="Spring Boot.Curriculum" />
       <item itemvalue="Spring Boot.Templates" />
       <item itemvalue="Spring Boot.Pages" />
-      <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
     </list>
     <recent_temporary>
       <list>
@@ -330,6 +322,7 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SpringBeansView">
     <option name="beanDetailsProportion" value="0.3" />
   </component>
@@ -407,6 +400,7 @@
       <workItem from="1589563043246" duration="131000" />
       <workItem from="1594846897731" duration="4867000" />
       <workItem from="1594851794865" duration="1542000" />
+      <workItem from="1700650892872" duration="42000" />
     </task>
     <task id="LOCAL-00001" summary="Version bumped spring, thymeleaf.&#10;Using Intellij Idea Ultimate.&#10;Version bumped from jdk 1.6 to jdk 1.8.">
       <created>1543412614105</created>
@@ -458,7 +452,6 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
@@ -468,60 +461,6 @@
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="716" y="378" width="915" height="383" key="#Docker" timestamp="1594852035622">
-      <screen x="0" y="48" width="1920" height="1032" />
-    </state>
-    <state x="716" y="378" width="915" height="383" key="#Docker/0.48.1920.1032@0.48.1920.1032" timestamp="1594852035622" />
-    <state width="1158" height="275" key="GridCell.Tab.0.bottom" timestamp="1594851768775">
-      <screen x="0" y="48" width="1920" height="1032" />
-    </state>
-    <state width="1158" height="275" key="GridCell.Tab.0.bottom/0.48.1920.1032@0.48.1920.1032" timestamp="1594851768775" />
-    <state width="1158" height="275" key="GridCell.Tab.0.center" timestamp="1594851768775">
-      <screen x="0" y="48" width="1920" height="1032" />
-    </state>
-    <state width="1158" height="275" key="GridCell.Tab.0.center/0.48.1920.1032@0.48.1920.1032" timestamp="1594851768775" />
-    <state width="1158" height="275" key="GridCell.Tab.0.left" timestamp="1594851768774">
-      <screen x="0" y="48" width="1920" height="1032" />
-    </state>
-    <state width="1158" height="275" key="GridCell.Tab.0.left/0.48.1920.1032@0.48.1920.1032" timestamp="1594851768774" />
-    <state width="1158" height="275" key="GridCell.Tab.0.right" timestamp="1594851768775">
-      <screen x="0" y="48" width="1920" height="1032" />
-    </state>
-    <state width="1158" height="275" key="GridCell.Tab.0.right/0.48.1920.1032@0.48.1920.1032" timestamp="1594851768775" />
-    <state width="1158" height="275" key="GridCell.Tab.1.bottom" timestamp="1594851768775">
-      <screen x="0" y="48" width="1920" height="1032" />
-    </state>
-    <state width="1158" height="275" key="GridCell.Tab.1.bottom/0.48.1920.1032@0.48.1920.1032" timestamp="1594851768775" />
-    <state width="1158" height="275" key="GridCell.Tab.1.center" timestamp="1594851768775">
-      <screen x="0" y="48" width="1920" height="1032" />
-    </state>
-    <state width="1158" height="275" key="GridCell.Tab.1.center/0.48.1920.1032@0.48.1920.1032" timestamp="1594851768775" />
-    <state width="1158" height="275" key="GridCell.Tab.1.left" timestamp="1594851768775">
-      <screen x="0" y="48" width="1920" height="1032" />
-    </state>
-    <state width="1158" height="275" key="GridCell.Tab.1.left/0.48.1920.1032@0.48.1920.1032" timestamp="1594851768775" />
-    <state width="1158" height="275" key="GridCell.Tab.1.right" timestamp="1594851768775">
-      <screen x="0" y="48" width="1920" height="1032" />
-    </state>
-    <state width="1158" height="275" key="GridCell.Tab.1.right/0.48.1920.1032@0.48.1920.1032" timestamp="1594851768775" />
-    <state x="382" y="141" width="1333" height="857" key="SettingsEditor" timestamp="1594851763933">
-      <screen x="0" y="48" width="1920" height="1032" />
-    </state>
-    <state x="382" y="141" width="1333" height="857" key="SettingsEditor/0.48.1920.1032@0.48.1920.1032" timestamp="1594851763933" />
-    <state x="554" y="293" key="Vcs.Push.Dialog.v2" timestamp="1594852803698">
-      <screen x="0" y="48" width="1920" height="1032" />
-    </state>
-    <state x="554" y="293" key="Vcs.Push.Dialog.v2/0.48.1920.1032@0.48.1920.1032" timestamp="1594852803698" />
-    <state x="664" y="237" width="707" height="488" key="new project wizard" timestamp="1594847925498">
-      <screen x="0" y="48" width="1920" height="1032" />
-    </state>
-    <state x="664" y="237" width="707" height="488" key="new project wizard/0.48.1920.1032@0.48.1920.1032" timestamp="1594847925498" />
-    <state x="623" y="275" key="search.everywhere.popup" timestamp="1594848032870">
-      <screen x="0" y="48" width="1920" height="1032" />
-    </state>
-    <state x="623" y="275" key="search.everywhere.popup/0.48.1920.1032@0.48.1920.1032" timestamp="1594848032870" />
   </component>
   <component name="mavenExecuteGoalHistory">
     <option value="$PROJECT_DIR$/auth-server" />

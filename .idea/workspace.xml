@@ -22,21 +22,17 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dab8f7c3-e84b-41bd-a336-bfa13021ba09" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accardos-personal-website.iml" beforeDir="false" afterPath="$PROJECT_DIR$/accardos-personal-website.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-server/auth-server.iml" beforeDir="false" afterPath="$PROJECT_DIR$/auth-server/auth-server.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/curriculum-provider/curriculum-provider.iml" beforeDir="false" afterPath="$PROJECT_DIR$/curriculum-provider/curriculum-provider.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/discovery-server/discovery-server.iml" beforeDir="false" afterPath="$PROJECT_DIR$/discovery-server/discovery-server.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages-provider/pages-provider.iml" beforeDir="false" afterPath="$PROJECT_DIR$/pages-provider/pages-provider.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates-provider/templates-provider.iml" beforeDir="false" afterPath="$PROJECT_DIR$/templates-provider/templates-provider.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web-ui/web-ui.iml" beforeDir="false" afterPath="$PROJECT_DIR$/web-ui/web-ui.iml" afterDir="false" />
-    </list>
+    <list default="true" id="dab8f7c3-e84b-41bd-a336-bfa13021ba09" name="Default Changelist" comment="New IntelliJ version and rebump for the project with a coming migration to Java 21 and Spring Cloud 2022.0.4 (Spring Boot 3.1.5)" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager">
+    <option name="groupingKeys">
+      <option value="directory" />
+      <option value="module" />
+    </option>
   </component>
   <component name="CodeInsightWorkspaceSettings">
     <option name="optimizeImportsOnTheFly" value="true" />
@@ -161,11 +157,12 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "false",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
     "last_opened_file_path": "/home/klez/projects/accardos-personal-website",
     "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
+    "project.structure.proportion": "0.11357702",
     "project.structure.side.proportion": "0.3218391",
     "vue.rearranger.settings.migration": "true"
   }
@@ -400,7 +397,7 @@
       <workItem from="1589563043246" duration="131000" />
       <workItem from="1594846897731" duration="4867000" />
       <workItem from="1594851794865" duration="1542000" />
-      <workItem from="1700650892872" duration="42000" />
+      <workItem from="1700650892872" duration="297000" />
     </task>
     <task id="LOCAL-00001" summary="Version bumped spring, thymeleaf.&#10;Using Intellij Idea Ultimate.&#10;Version bumped from jdk 1.6 to jdk 1.8.">
       <created>1543412614105</created>
@@ -423,11 +420,27 @@
       <option name="project" value="LOCAL" />
       <updated>1543564936602</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="New IntelliJ version and rebump for the project with a coming migration to Java 21 and Spring Cloud 2022.0.4 (Spring Boot 3.1.5)">
+      <option name="closed" value="true" />
+      <created>1700651097801</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1700651097801</updated>
+    </task>
+    <task id="LOCAL-00005" summary="New IntelliJ version and rebump for the project with a coming migration to Java 21 and Spring Cloud 2022.0.4 (Spring Boot 3.1.5)">
+      <option name="closed" value="true" />
+      <created>1700651126492</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1700651126492</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="3" />
   </component>
   <component name="UpdateCopyrightCheckinHandler">
     <option name="UPDATE_COPYRIGHT" value="true" />
@@ -457,7 +470,8 @@
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <MESSAGE value="Version bumped spring, thymeleaf.&#10;Using Intellij Idea Ultimate.&#10;Version bumped from jdk 1.6 to jdk 1.8." />
     <MESSAGE value="Pages controller works in redirect and new form for catching values!&#10;Now auth should be done, then rest of the pages CRUD." />
-    <option name="LAST_COMMIT_MESSAGE" value="Pages controller works in redirect and new form for catching values!&#10;Now auth should be done, then rest of the pages CRUD." />
+    <MESSAGE value="New IntelliJ version and rebump for the project with a coming migration to Java 21 and Spring Cloud 2022.0.4 (Spring Boot 3.1.5)" />
+    <option name="LAST_COMMIT_MESSAGE" value="New IntelliJ version and rebump for the project with a coming migration to Java 21 and Spring Cloud 2022.0.4 (Spring Boot 3.1.5)" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

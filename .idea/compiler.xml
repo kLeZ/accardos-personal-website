@@ -8,9 +8,9 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="web-ui" />
+        <module name="pages-provider" />
         <module name="discovery-server" />
         <module name="curriculum-provider" />
-        <module name="page-provider" />
         <module name="auth-server" />
         <module name="templates-provider" />
       </profile>
@@ -18,7 +18,12 @@
     <bytecodeTargetLevel>
       <module name="accardos-personal-website-parent" target="21" />
       <module name="maven-archiver" target="1.5" />
-      <module name="pages-provider" target="1.8" />
+      <module name="maven-archiver (1)" target="1.5" />
+      <module name="maven-archiver (2)" target="1.5" />
+      <module name="maven-archiver (3)" target="1.5" />
+      <module name="maven-archiver (4)" target="1.5" />
+      <module name="maven-archiver (5)" target="1.5" />
+      <module name="page-provider" target="21" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">

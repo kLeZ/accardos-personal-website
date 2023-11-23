@@ -23,7 +23,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dab8f7c3-e84b-41bd-a336-bfa13021ba09" name="Default Changelist" comment="New IntelliJ version and rebump for the project with a coming migration to Java 21 and Spring Cloud 2022.0.4 (Spring Boot 3.1.5)">
-      <changelist_data name="Alessandro Accardo" email="julius8774@gmail.com" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/auth-server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/curriculum-provider/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/curriculum-provider/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/discovery-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/discovery-server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages-provider/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pages-provider/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates-provider/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/templates-provider/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-ui/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web-ui/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,6 +73,7 @@
     </option>
   </component>
   <component name="FindBugs-IDEA-Workspace">
+    <toolWindowEditorPreview>false</toolWindowEditorPreview>
     <analyzeBeforeCheckIn>true</analyzeBeforeCheckIn>
   </component>
   <component name="FindInProjectRecents">
@@ -290,7 +298,7 @@
       </method>
     </configuration>
     <configuration name="Pages" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="pages-provider" />
+      <module name="page-provider" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="it.aaccardo.pagesprovider.Application" />
       <method v="2" />
     </configuration>
@@ -414,7 +422,7 @@
       <workItem from="1594851794865" duration="1542000" />
       <workItem from="1700650892872" duration="2913000" />
       <workItem from="1700726614506" duration="770000" />
-      <workItem from="1700727413579" duration="119000" />
+      <workItem from="1700727413579" duration="1382000" />
     </task>
     <task id="LOCAL-00001" summary="Version bumped spring, thymeleaf.&#10;Using Intellij Idea Ultimate.&#10;Version bumped from jdk 1.6 to jdk 1.8.">
       <created>1543412614105</created>
@@ -469,7 +477,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700727472908</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="New IntelliJ version and rebump for the project with a coming migration to Java 21 and Spring Cloud 2022.0.4 (Spring Boot 3.1.5)">
+      <option name="closed" value="true" />
+      <created>1700727539210</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1700727539210</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

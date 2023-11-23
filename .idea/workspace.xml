@@ -22,7 +22,42 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dab8f7c3-e84b-41bd-a336-bfa13021ba09" name="Default Changelist" comment="New IntelliJ version and rebump for the project with a coming migration to Java 21 and Spring Cloud 2022.0.4 (Spring Boot 3.1.5)" />
+    <list default="true" id="dab8f7c3-e84b-41bd-a336-bfa13021ba09" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/settings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/accardos-personal-website.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-server/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-server/.factorypath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-server/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-server/auth-server.eml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-server/auth-server.iml" beforeDir="false" afterPath="$PROJECT_DIR$/auth-server/auth-server.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/auth-server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/curriculum-provider/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/curriculum-provider/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/curriculum-provider/curriculum-provider.eml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/curriculum-provider/curriculum-provider.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/discovery-server/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/discovery-server/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/discovery-server/discovery-server.eml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/discovery-server/discovery-server.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages-provider/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages-provider/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages-provider/page-provider.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages-provider/pages-provider.eml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages-provider/pages-provider.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates-provider/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates-provider/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates-provider/templates-provider.eml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates-provider/templates-provider.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-ui/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-ui/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-ui/web-ui.eml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-ui/web-ui.iml" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -95,13 +130,7 @@
     <servers />
   </component>
   <component name="GitToolBoxStore">
-    <option name="projectConfigVersion" value="2" />
-  </component>
-  <component name="JsFlowSettings">
-    <service-enabled>true</service-enabled>
-    <exe-path />
-    <other-services-enabled>true</other-services-enabled>
-    <auto-save>true</auto-save>
+    <option name="projectConfigVersion" value="5" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -114,12 +143,15 @@
       </MavenImportingSettings>
     </option>
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="1RCOjSqJ0i8NGBt335vJm60X0mz" />
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -153,20 +185,26 @@
     <option name="showLibraryContents" value="true" />
     <option name="showVisibilityIcons" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SONARLINT_PRECOMMIT_ANALYSIS": "false",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "/home/klez/projects/accardos-personal-website",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.11357702",
-    "project.structure.side.proportion": "0.3218391",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;false&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/klez/projects/accardos-personal-website/pom.xml&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.11357702&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.3218391&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="it.aaccardo.webui.models" />
@@ -397,7 +435,8 @@
       <workItem from="1589563043246" duration="131000" />
       <workItem from="1594846897731" duration="4867000" />
       <workItem from="1594851794865" duration="1542000" />
-      <workItem from="1700650892872" duration="297000" />
+      <workItem from="1700650892872" duration="2913000" />
+      <workItem from="1700726614506" duration="770000" />
     </task>
     <task id="LOCAL-00001" summary="Version bumped spring, thymeleaf.&#10;Using Intellij Idea Ultimate.&#10;Version bumped from jdk 1.6 to jdk 1.8.">
       <created>1543412614105</created>
@@ -436,7 +475,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700651126492</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="New IntelliJ version and rebump for the project with a coming migration to Java 21 and Spring Cloud 2022.0.4 (Spring Boot 3.1.5)">
+      <option name="closed" value="true" />
+      <created>1700651277060</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1700651277060</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

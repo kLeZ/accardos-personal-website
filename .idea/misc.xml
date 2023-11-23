@@ -4,12 +4,8 @@
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
-        <option value="$PROJECT_DIR$/auth-server/pom.xml" />
-        <option value="$PROJECT_DIR$/curriculum-provider/pom.xml" />
-        <option value="$PROJECT_DIR$/discovery-server/pom.xml" />
-        <option value="$PROJECT_DIR$/templates-provider/pom.xml" />
-        <option value="$PROJECT_DIR$/web-ui/pom.xml" />
-        <option value="$PROJECT_DIR$/pages-provider/pom.xml" />
+        <option value="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>

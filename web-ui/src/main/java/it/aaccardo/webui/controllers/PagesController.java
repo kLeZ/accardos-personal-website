@@ -1,5 +1,5 @@
 /*
- * Copyright © 2018 Alessandro Accardo a.k.a. kLeZ <julius8774@gmail.com>
+ * Copyright © 2023 Alessandro Accardo a.k.a. kLeZ <julius8774@gmail.com>
  * This file is part of AAccardo Personal WebSite.
  *
  * AAccardo Personal WebSite is free software: you can redistribute it and/or modify
@@ -17,12 +17,12 @@
  *
  */
 
-package it.aaccardo.webui.controllers;
+package me.klez.webui.controllers;
 
-import it.aaccardo.webui.clients.PagesSubscriber;
-import it.aaccardo.webui.models.NewPage;
-import it.aaccardo.webui.models.Page;
 import lombok.extern.slf4j.Slf4j;
+import me.klez.webui.clients.PagesSubscriber;
+import me.klez.webui.models.NewPage;
+import me.klez.webui.models.Page;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.ModelAttribute;

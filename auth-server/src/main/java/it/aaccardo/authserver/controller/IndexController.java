@@ -1,5 +1,5 @@
 /*
- * Copyright © 2018 Alessandro Accardo a.k.a. kLeZ <julius8774@gmail.com>
+ * Copyright © 2023 Alessandro Accardo a.k.a. kLeZ <julius8774@gmail.com>
  * This file is part of AAccardo Personal WebSite.
  *
  * AAccardo Personal WebSite is free software: you can redistribute it and/or modify
@@ -16,15 +16,7 @@
  * along with AAccardo Personal WebSite.  If not, see <http://www.gnu.org/licenses/>.
  *
  */
-package it.aaccardo.authserver.controller;
-
-import static java.util.Arrays.asList;
-
-import java.security.Principal;
-import java.util.Collection;
-import java.util.List;
-import java.util.Map;
-import java.util.stream.Collectors;
+package me.klez.authserver.controller;
 
 import org.springframework.security.oauth2.provider.approval.Approval;
 import org.springframework.security.oauth2.provider.approval.ApprovalStore;
@@ -35,6 +27,15 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
+
+import java.security.Principal;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
+
+import static java.util.Arrays.asList;
 
 /**
  * @author Moritz Schulze
@@ -66,7 +67,7 @@ public class IndexController {
 
 	@RequestMapping(value = "/approval/revoke", method = RequestMethod.POST)
 	public String revokeApproval(@ModelAttribute Approval approval) {
-		approvalStore.revokeApprovals(asList(approval));
+		approvalStore.revokeApprovals(Collections.singletonList(approval));
 		tokenStore.findTokensByClientIdAndUserName(approval.getClientId(), approval.getUserId())
 				.forEach(tokenStore::removeAccessToken);
 		return "redirect:/";

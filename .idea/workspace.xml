@@ -22,15 +22,63 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dab8f7c3-e84b-41bd-a336-bfa13021ba09" name="Default Changelist" comment="New IntelliJ version and rebump for the project with a coming migration to Java 21 and Spring Cloud 2022.0.4 (Spring Boot 3.1.5)">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="dab8f7c3-e84b-41bd-a336-bfa13021ba09" name="Default Changelist" comment="Made modules and parent pom for all of them">
       <change beforePath="$PROJECT_DIR$/auth-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/auth-server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-server/src/main/java/it/aaccardo/authserver/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-server/src/main/java/it/aaccardo/authserver/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-server/src/main/java/it/aaccardo/authserver/AuthorityPropertyEditor.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-server/src/main/java/it/aaccardo/authserver/AuthorityPropertyEditor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-server/src/main/java/it/aaccardo/authserver/OAuthConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-server/src/main/java/it/aaccardo/authserver/OAuthConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-server/src/main/java/it/aaccardo/authserver/SecurityConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-server/src/main/java/it/aaccardo/authserver/SecurityConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-server/src/main/java/it/aaccardo/authserver/SplitCollectionEditor.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-server/src/main/java/it/aaccardo/authserver/SplitCollectionEditor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-server/src/main/java/it/aaccardo/authserver/controller/ClientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-server/src/main/java/it/aaccardo/authserver/controller/ClientController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-server/src/main/java/it/aaccardo/authserver/controller/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-server/src/main/java/it/aaccardo/authserver/controller/IndexController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/curriculum-provider/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/curriculum-provider/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/curriculum-provider/src/main/java/it/aaccardo/curriculumprovider/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/curriculum-provider/src/main/java/it/aaccardo/curriculumprovider/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/curriculum-provider/src/main/java/it/aaccardo/curriculumprovider/Curriculum.java" beforeDir="false" afterPath="$PROJECT_DIR$/curriculum-provider/src/main/java/it/aaccardo/curriculumprovider/Curriculum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/curriculum-provider/src/main/java/it/aaccardo/curriculumprovider/CurriculumController.java" beforeDir="false" afterPath="$PROJECT_DIR$/curriculum-provider/src/main/java/it/aaccardo/curriculumprovider/CurriculumController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/curriculum-provider/src/main/java/it/aaccardo/curriculumprovider/CurriculumNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/curriculum-provider/src/main/java/it/aaccardo/curriculumprovider/CurriculumNotFoundException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/curriculum-provider/src/main/java/it/aaccardo/curriculumprovider/CurriculumRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/curriculum-provider/src/main/java/it/aaccardo/curriculumprovider/CurriculumRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/curriculum-provider/src/main/java/it/aaccardo/curriculumprovider/LocalDateTimeToStringConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/curriculum-provider/src/main/java/it/aaccardo/curriculumprovider/LocalDateTimeToStringConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/curriculum-provider/src/main/java/it/aaccardo/curriculumprovider/LocalDateToStringConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/curriculum-provider/src/main/java/it/aaccardo/curriculumprovider/LocalDateToStringConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/curriculum-provider/src/main/java/it/aaccardo/curriculumprovider/StringToLocalDateConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/curriculum-provider/src/main/java/it/aaccardo/curriculumprovider/StringToLocalDateConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/curriculum-provider/src/main/java/it/aaccardo/curriculumprovider/StringToLocalDateTimeConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/curriculum-provider/src/main/java/it/aaccardo/curriculumprovider/StringToLocalDateTimeConverter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/discovery-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/discovery-server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/discovery-server/src/main/java/it/aaccardo/discoveryserver/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/discovery-server/src/main/java/it/aaccardo/discoveryserver/Application.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages-provider/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pages-provider/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages-provider/src/main/java/it/aaccardo/pagesprovider/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/pages-provider/src/main/java/it/aaccardo/pagesprovider/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages-provider/src/main/java/it/aaccardo/pagesprovider/Author.java" beforeDir="false" afterPath="$PROJECT_DIR$/pages-provider/src/main/java/it/aaccardo/pagesprovider/Author.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages-provider/src/main/java/it/aaccardo/pagesprovider/LocalDateTimeToStringConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/pages-provider/src/main/java/it/aaccardo/pagesprovider/LocalDateTimeToStringConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages-provider/src/main/java/it/aaccardo/pagesprovider/LocalDateToStringConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/pages-provider/src/main/java/it/aaccardo/pagesprovider/LocalDateToStringConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages-provider/src/main/java/it/aaccardo/pagesprovider/Page.java" beforeDir="false" afterPath="$PROJECT_DIR$/pages-provider/src/main/java/it/aaccardo/pagesprovider/Page.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages-provider/src/main/java/it/aaccardo/pagesprovider/PageNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/pages-provider/src/main/java/it/aaccardo/pagesprovider/PageNotFoundException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages-provider/src/main/java/it/aaccardo/pagesprovider/PagesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/pages-provider/src/main/java/it/aaccardo/pagesprovider/PagesController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages-provider/src/main/java/it/aaccardo/pagesprovider/PagesRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/pages-provider/src/main/java/it/aaccardo/pagesprovider/PagesRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages-provider/src/main/java/it/aaccardo/pagesprovider/StringToLocalDateConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/pages-provider/src/main/java/it/aaccardo/pagesprovider/StringToLocalDateConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages-provider/src/main/java/it/aaccardo/pagesprovider/StringToLocalDateTimeConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/pages-provider/src/main/java/it/aaccardo/pagesprovider/StringToLocalDateTimeConverter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates-provider/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/templates-provider/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates-provider/src/main/java/it/aaccardo/templatesprovider/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/templates-provider/src/main/java/it/aaccardo/templatesprovider/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates-provider/src/main/java/it/aaccardo/templatesprovider/DuplicateTemplateException.java" beforeDir="false" afterPath="$PROJECT_DIR$/templates-provider/src/main/java/it/aaccardo/templatesprovider/DuplicateTemplateException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates-provider/src/main/java/it/aaccardo/templatesprovider/RedisObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/templates-provider/src/main/java/it/aaccardo/templatesprovider/RedisObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates-provider/src/main/java/it/aaccardo/templatesprovider/RedisRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/templates-provider/src/main/java/it/aaccardo/templatesprovider/RedisRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates-provider/src/main/java/it/aaccardo/templatesprovider/Template.java" beforeDir="false" afterPath="$PROJECT_DIR$/templates-provider/src/main/java/it/aaccardo/templatesprovider/Template.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates-provider/src/main/java/it/aaccardo/templatesprovider/TemplateNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/templates-provider/src/main/java/it/aaccardo/templatesprovider/TemplateNotFoundException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates-provider/src/main/java/it/aaccardo/templatesprovider/TemplateRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/templates-provider/src/main/java/it/aaccardo/templatesprovider/TemplateRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates-provider/src/main/java/it/aaccardo/templatesprovider/TemplatesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/templates-provider/src/main/java/it/aaccardo/templatesprovider/TemplatesController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web-ui/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web-ui/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-ui/src/main/java/it/aaccardo/webui/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-ui/src/main/java/it/aaccardo/webui/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-ui/src/main/java/it/aaccardo/webui/TemplateResolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-ui/src/main/java/it/aaccardo/webui/TemplateResolver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-ui/src/main/java/it/aaccardo/webui/clients/CurriculumSubscriber.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-ui/src/main/java/it/aaccardo/webui/clients/CurriculumSubscriber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-ui/src/main/java/it/aaccardo/webui/clients/PagesSubscriber.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-ui/src/main/java/it/aaccardo/webui/clients/PagesSubscriber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-ui/src/main/java/it/aaccardo/webui/clients/TemplatesSubscriber.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-ui/src/main/java/it/aaccardo/webui/clients/TemplatesSubscriber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-ui/src/main/java/it/aaccardo/webui/controllers/CurriculumController.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-ui/src/main/java/it/aaccardo/webui/controllers/CurriculumController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-ui/src/main/java/it/aaccardo/webui/controllers/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-ui/src/main/java/it/aaccardo/webui/controllers/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-ui/src/main/java/it/aaccardo/webui/controllers/PagesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-ui/src/main/java/it/aaccardo/webui/controllers/PagesController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-ui/src/main/java/it/aaccardo/webui/models/Author.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-ui/src/main/java/it/aaccardo/webui/models/Author.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-ui/src/main/java/it/aaccardo/webui/models/Curriculum.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-ui/src/main/java/it/aaccardo/webui/models/Curriculum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-ui/src/main/java/it/aaccardo/webui/models/NewPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-ui/src/main/java/it/aaccardo/webui/models/NewPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-ui/src/main/java/it/aaccardo/webui/models/Page.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-ui/src/main/java/it/aaccardo/webui/models/Page.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-ui/src/main/java/it/aaccardo/webui/models/Template.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-ui/src/main/java/it/aaccardo/webui/models/Template.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-ui/src/main/resources/web.yml" beforeDir="false" afterPath="$PROJECT_DIR$/web-ui/src/main/resources/web.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +121,6 @@
     </option>
   </component>
   <component name="FindBugs-IDEA-Workspace">
-    <toolWindowEditorPreview>false</toolWindowEditorPreview>
     <analyzeBeforeCheckIn>true</analyzeBeforeCheckIn>
   </component>
   <component name="FindInProjectRecents">
@@ -186,7 +233,7 @@
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.11357702",
     "project.structure.side.proportion": "0.3218391",
-    "settings.editor.selected.configurable": "project.propVCSSupport.CommitDialog",
+    "settings.editor.selected.configurable": "build.tools",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -218,129 +265,11 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Docker.docker-compose.yml: Compose Deployment">
-    <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="it.aaccardo.webui.Application" />
-      <module name="web-ui" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="it.aaccardo.webui.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="All Features in: templates-provider" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="3" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/templates-provider" />
-      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
-      <module name="templates-provider" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm3SMFormatter" />
-      <option name="SUGGESTED_NAME" value="All Features in: templates-provider" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cucumber.api.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="web-ui [clean]" type="MavenRunConfiguration" factoryName="Maven" temporary="true">
-      <MavenSettings>
-        <option name="myGeneralSettings" />
-        <option name="myRunnerSettings" />
-        <option name="myRunnerParameters">
-          <MavenRunnerParameters>
-            <option name="cmdOptions" />
-            <option name="profiles">
-              <set />
-            </option>
-            <option name="goals">
-              <list>
-                <option value="clean" />
-              </list>
-            </option>
-            <option name="pomFileName" value="pom.xml" />
-            <option name="profilesMap">
-              <map />
-            </option>
-            <option name="projectsCmdOptionValues">
-              <list />
-            </option>
-            <option name="resolveToWorkspace" value="false" />
-            <option name="workingDirPath" value="$PROJECT_DIR$/web-ui" />
-          </MavenRunnerParameters>
-        </option>
-      </MavenSettings>
-      <method v="2" />
-    </configuration>
-    <configuration name="Auth" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="auth-server" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="it.aaccardo.authserver.Application" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Curriculum" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="curriculum-provider" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="it.aaccardo.curriculumprovider.Application" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Eureka" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="discovery-server" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="it.aaccardo.discoveryserver.Application" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Pages" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="page-provider" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="it.aaccardo.pagesprovider.Application" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Templates" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="templates-provider" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="it.aaccardo.templatesprovider.Application" />
-      <method v="2" />
-    </configuration>
-    <configuration name="WebUI" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="web-ui" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="it.aaccardo.webui.Application" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
-      <deployment type="docker-compose.yml">
-        <settings>
-          <option name="sourceFilePath" value="docker-compose.yml" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Maven.accardos-personal-website [clean,verify]">
     <list>
-      <item itemvalue="Application.Application" />
-      <item itemvalue="Cucumber Java.All Features in: templates-provider" />
       <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
-      <item itemvalue="Maven.web-ui [clean]" />
-      <item itemvalue="Spring Boot.Auth" />
-      <item itemvalue="Spring Boot.WebUI" />
-      <item itemvalue="Spring Boot.Eureka" />
-      <item itemvalue="Spring Boot.Curriculum" />
-      <item itemvalue="Spring Boot.Templates" />
-      <item itemvalue="Spring Boot.Pages" />
+      <item itemvalue="Maven.accardos-personal-website [clean,verify]" />
     </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
-        <item itemvalue="Maven.web-ui [clean]" />
-        <item itemvalue="Application.Application" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SpringBeansView">
@@ -422,7 +351,7 @@
       <workItem from="1594851794865" duration="1542000" />
       <workItem from="1700650892872" duration="2913000" />
       <workItem from="1700726614506" duration="770000" />
-      <workItem from="1700727413579" duration="1382000" />
+      <workItem from="1700727413579" duration="1633000" />
     </task>
     <task id="LOCAL-00001" summary="Version bumped spring, thymeleaf.&#10;Using Intellij Idea Ultimate.&#10;Version bumped from jdk 1.6 to jdk 1.8.">
       <created>1543412614105</created>
@@ -485,7 +414,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700727539210</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Made modules and parent pom for all of them">
+      <option name="closed" value="true" />
+      <created>1700728971814</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1700728971814</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -521,10 +458,15 @@
     <MESSAGE value="Version bumped spring, thymeleaf.&#10;Using Intellij Idea Ultimate.&#10;Version bumped from jdk 1.6 to jdk 1.8." />
     <MESSAGE value="Pages controller works in redirect and new form for catching values!&#10;Now auth should be done, then rest of the pages CRUD." />
     <MESSAGE value="New IntelliJ version and rebump for the project with a coming migration to Java 21 and Spring Cloud 2022.0.4 (Spring Boot 3.1.5)" />
-    <option name="LAST_COMMIT_MESSAGE" value="New IntelliJ version and rebump for the project with a coming migration to Java 21 and Spring Cloud 2022.0.4 (Spring Boot 3.1.5)" />
+    <MESSAGE value="Made modules and parent pom for all of them" />
+    <option name="LAST_COMMIT_MESSAGE" value="Made modules and parent pom for all of them" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
   <component name="mavenExecuteGoalHistory">
     <option value="$PROJECT_DIR$/auth-server" />

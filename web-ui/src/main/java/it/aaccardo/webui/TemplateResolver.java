@@ -1,5 +1,5 @@
 /*
- * Copyright © 2018 Alessandro Accardo a.k.a. kLeZ <julius8774@gmail.com>
+ * Copyright © 2023 Alessandro Accardo a.k.a. kLeZ <julius8774@gmail.com>
  * This file is part of AAccardo Personal WebSite.
  *
  * AAccardo Personal WebSite is free software: you can redistribute it and/or modify
@@ -17,10 +17,10 @@
  *
  */
 
-package it.aaccardo.webui;
+package me.klez.webui;
 
-import it.aaccardo.webui.clients.TemplatesSubscriber;
-import it.aaccardo.webui.models.Template;
+import me.klez.webui.clients.TemplatesSubscriber;
+import me.klez.webui.models.Template;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

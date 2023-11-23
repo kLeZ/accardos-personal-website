@@ -1,5 +1,5 @@
 /*
- * Copyright © 2018 Alessandro Accardo a.k.a. kLeZ <julius8774@gmail.com>
+ * Copyright © 2023 Alessandro Accardo a.k.a. kLeZ <julius8774@gmail.com>
  * This file is part of AAccardo Personal WebSite.
  *
  * AAccardo Personal WebSite is free software: you can redistribute it and/or modify
@@ -17,7 +17,7 @@
  *
  */
 
-package it.aaccardo.curriculumprovider;
+package me.klez.curriculumprovider;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -40,8 +40,8 @@ public class Application {
 	@Bean
 	public MongoCustomConversions customConversions() {
 		List<Converter<?, ?>> converters = new ArrayList<>();
-		converters.add(new LocalDateTimeToStringConverter());
-		converters.add(new LocalDateToStringConverter());
+		converters.add(new me.klez.curriculumprovider.LocalDateTimeToStringConverter());
+		converters.add(new me.klez.curriculumprovider.LocalDateToStringConverter());
 		return new MongoCustomConversions(converters);
 	}
 }

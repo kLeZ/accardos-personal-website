@@ -1,5 +1,5 @@
 /*
- * Copyright © 2018 Alessandro Accardo a.k.a. kLeZ <julius8774@gmail.com>
+ * Copyright © 2023 Alessandro Accardo a.k.a. kLeZ <julius8774@gmail.com>
  * This file is part of AAccardo Personal WebSite.
  *
  * AAccardo Personal WebSite is free software: you can redistribute it and/or modify
@@ -17,7 +17,7 @@
  *
  */
 
-package it.aaccardo.webui.models;
+package me.klez.webui.models;
 
 import java.util.Date;
 
@@ -26,5 +26,5 @@ public class Page {
 	private String id;
 	private String title;
 	private Date creationDate;
-	private Author author;
+	private me.klez.webui.models.Author author;
 }

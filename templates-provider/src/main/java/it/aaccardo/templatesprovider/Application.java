@@ -1,5 +1,5 @@
 /*
- * Copyright © 2018 Alessandro Accardo a.k.a. kLeZ <julius8774@gmail.com>
+ * Copyright © 2023 Alessandro Accardo a.k.a. kLeZ <julius8774@gmail.com>
  * This file is part of AAccardo Personal WebSite.
  *
  * AAccardo Personal WebSite is free software: you can redistribute it and/or modify
@@ -17,7 +17,7 @@
  *
  */
 
-package it.aaccardo.templatesprovider;
+package me.klez.templatesprovider;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
@@ -65,8 +65,8 @@ public class Application {
 	}
 
 	@Bean
-	public TemplateRepository templateRepository() {
-		TemplateRepository repo = new TemplateRepository();
+	public me.klez.templatesprovider.TemplateRepository templateRepository() {
+		me.klez.templatesprovider.TemplateRepository repo = new me.klez.templatesprovider.TemplateRepository();
 		repo.setRedisTemplate(redisTemplate());
 		return repo;
 	}

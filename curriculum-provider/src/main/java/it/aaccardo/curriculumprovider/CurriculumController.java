@@ -1,5 +1,5 @@
 /*
- * Copyright © 2018 Alessandro Accardo a.k.a. kLeZ <julius8774@gmail.com>
+ * Copyright © 2023 Alessandro Accardo a.k.a. kLeZ <julius8774@gmail.com>
  * This file is part of AAccardo Personal WebSite.
  *
  * AAccardo Personal WebSite is free software: you can redistribute it and/or modify
@@ -17,7 +17,7 @@
  *
  */
 
-package it.aaccardo.curriculumprovider;
+package me.klez.curriculumprovider;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -30,31 +30,31 @@ public class CurriculumController {
 	protected Logger log = Logger.getLogger(CurriculumController.class.getName());
 
 	@Autowired
-	CurriculumRepository repository;
+	me.klez.curriculumprovider.CurriculumRepository repository;
 
 	@RequestMapping(value = "/curricula", method = RequestMethod.GET)
-	public List<Curriculum> all() {
+	public List<me.klez.curriculumprovider.Curriculum> all() {
 		return repository.findAll();
 	}
 
 	@RequestMapping(value = "/curricula/{title}", method = RequestMethod.GET)
-	public Curriculum byTitle(@PathVariable String title) throws CurriculumNotFoundException {
-		Curriculum curriculum = repository.findByTitle(title);
+	public me.klez.curriculumprovider.Curriculum byTitle(@PathVariable String title) throws me.klez.curriculumprovider.CurriculumNotFoundException {
+		me.klez.curriculumprovider.Curriculum curriculum = repository.findByTitle(title);
 		if (curriculum != null) {
 			return curriculum;
 		} else {
-			throw new CurriculumNotFoundException(title);
+			throw new me.klez.curriculumprovider.CurriculumNotFoundException(title);
 		}
 	}
 
 	@RequestMapping(value = "/curricula/new", method = RequestMethod.POST)
-	public Curriculum create(@RequestBody Curriculum newCurriculum) {
+	public me.klez.curriculumprovider.Curriculum create(@RequestBody me.klez.curriculumprovider.Curriculum newCurriculum) {
 		newCurriculum.setId(null);
 		return repository.save(newCurriculum);
 	}
 
 	@RequestMapping(value = "/curricula/{id}", method = RequestMethod.PUT)
-	public Curriculum update(@PathVariable String id, @RequestBody Curriculum updatedCurriculum) {
+	public me.klez.curriculumprovider.Curriculum update(@PathVariable String id, @RequestBody me.klez.curriculumprovider.Curriculum updatedCurriculum) {
 		updatedCurriculum.setId(id);
 		return repository.save(updatedCurriculum);
 	}

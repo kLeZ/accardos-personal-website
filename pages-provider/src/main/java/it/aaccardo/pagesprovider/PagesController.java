@@ -1,5 +1,5 @@
 /*
- * Copyright © 2018 Alessandro Accardo a.k.a. kLeZ <julius8774@gmail.com>
+ * Copyright © 2023 Alessandro Accardo a.k.a. kLeZ <julius8774@gmail.com>
  * This file is part of AAccardo Personal WebSite.
  *
  * AAccardo Personal WebSite is free software: you can redistribute it and/or modify
@@ -17,7 +17,7 @@
  *
  */
 
-package it.aaccardo.pagesprovider;
+package me.klez.pagesprovider;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -30,7 +30,7 @@ public class PagesController {
 	protected Logger log = Logger.getLogger(PagesController.class.getName());
 
 	@Autowired
-	PagesRepository repository;
+	me.klez.pagesprovider.PagesRepository repository;
 
 	@RequestMapping(value = "/pages", method = RequestMethod.GET)
 	public List<Page> all() {
@@ -38,12 +38,12 @@ public class PagesController {
 	}
 
 	@RequestMapping(value = "/pages/{title}", method = RequestMethod.GET)
-	public Page byTitle(@PathVariable String title) throws PageNotFoundException {
+	public Page byTitle(@PathVariable String title) throws me.klez.pagesprovider.PageNotFoundException {
 		Page page = repository.findByTitle(title);
 		if (page != null) {
 			return page;
 		} else {
-			throw new PageNotFoundException(title);
+			throw new me.klez.pagesprovider.PageNotFoundException(title);
 		}
 	}
 

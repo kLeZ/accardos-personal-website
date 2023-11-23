@@ -1,5 +1,5 @@
 /*
- * Copyright © 2018 Alessandro Accardo a.k.a. kLeZ <julius8774@gmail.com>
+ * Copyright © 2023 Alessandro Accardo a.k.a. kLeZ <julius8774@gmail.com>
  * This file is part of AAccardo Personal WebSite.
  *
  * AAccardo Personal WebSite is free software: you can redistribute it and/or modify
@@ -16,11 +16,10 @@
  * along with AAccardo Personal WebSite.  If not, see <http://www.gnu.org/licenses/>.
  *
  */
-package it.aaccardo.authserver.controller;
+package me.klez.authserver.controller;
 
-import java.util.Collection;
-import java.util.Set;
-
+import me.klez.authserver.AuthorityPropertyEditor;
+import me.klez.authserver.SplitCollectionEditor;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.oauth2.provider.ClientDetails;
@@ -29,14 +28,10 @@ import org.springframework.security.oauth2.provider.client.JdbcClientDetailsServ
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.WebDataBinder;
-import org.springframework.web.bind.annotation.InitBinder;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 
-import it.aaccardo.authserver.AuthorityPropertyEditor;
-import it.aaccardo.authserver.SplitCollectionEditor;
+import java.util.Collection;
+import java.util.Set;
 
 /**
  * @author Moritz Schulze
@@ -63,7 +58,7 @@ public class ClientController {
 
 	/**
 	 * Display an edit/create form for a client.
-	 * 
+	 *
 	 * @param clientId
 	 *            The id of the client to display. If null a create form will be displayed.
 	 * @param model
@@ -85,7 +80,7 @@ public class ClientController {
 
 	/**
 	 * Create/update a client from the form.
-	 * 
+	 *
 	 * @param clientDetails
 	 *            The model to create/update.
 	 * @param newClient

@@ -1,5 +1,5 @@
 /*
- * Copyright © 2018 Alessandro Accardo a.k.a. kLeZ <julius8774@gmail.com>
+ * Copyright © 2023 Alessandro Accardo a.k.a. kLeZ <julius8774@gmail.com>
  * This file is part of AAccardo Personal WebSite.
  *
  * AAccardo Personal WebSite is free software: you can redistribute it and/or modify
@@ -16,11 +16,11 @@
  * along with AAccardo Personal WebSite.  If not, see <http://www.gnu.org/licenses/>.
  *
  */
-package it.aaccardo.authserver;
-
-import java.util.Collection;
+package me.klez.authserver;
 
 import org.springframework.beans.propertyeditors.CustomCollectionEditor;
+
+import java.util.Collection;
 
 /**
  * Creates collections from a string.

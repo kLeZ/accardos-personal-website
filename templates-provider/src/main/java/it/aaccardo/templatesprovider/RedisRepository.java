@@ -1,5 +1,5 @@
 /*
- * Copyright © 2018 Alessandro Accardo a.k.a. kLeZ <julius8774@gmail.com>
+ * Copyright © 2023 Alessandro Accardo a.k.a. kLeZ <julius8774@gmail.com>
  * This file is part of AAccardo Personal WebSite.
  *
  * AAccardo Personal WebSite is free software: you can redistribute it and/or modify
@@ -17,11 +17,11 @@
  *
  */
 
-package it.aaccardo.templatesprovider;
+package me.klez.templatesprovider;
 
 import java.util.List;
 
-public interface RedisRepository<V extends RedisObject> {
+public interface RedisRepository<V extends me.klez.templatesprovider.RedisObject> {
 
 	void put(V obj);
 

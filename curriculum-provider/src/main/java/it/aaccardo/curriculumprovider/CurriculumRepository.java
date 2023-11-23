@@ -1,5 +1,5 @@
 /*
- * Copyright © 2018 Alessandro Accardo a.k.a. kLeZ <julius8774@gmail.com>
+ * Copyright © 2023 Alessandro Accardo a.k.a. kLeZ <julius8774@gmail.com>
  * This file is part of AAccardo Personal WebSite.
  *
  * AAccardo Personal WebSite is free software: you can redistribute it and/or modify
@@ -17,10 +17,10 @@
  *
  */
 
-package it.aaccardo.curriculumprovider;
+package me.klez.curriculumprovider;
 
 import org.springframework.data.mongodb.repository.MongoRepository;
 
-public interface CurriculumRepository extends MongoRepository<Curriculum, String> {
-	Curriculum findByTitle(String title);
+public interface CurriculumRepository extends MongoRepository<me.klez.curriculumprovider.Curriculum, String> {
+	me.klez.curriculumprovider.Curriculum findByTitle(String title);
 }

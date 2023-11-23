@@ -1,5 +1,5 @@
 /*
- * Copyright © 2018 Alessandro Accardo a.k.a. kLeZ <julius8774@gmail.com>
+ * Copyright © 2023 Alessandro Accardo a.k.a. kLeZ <julius8774@gmail.com>
  * This file is part of AAccardo Personal WebSite.
  *
  * AAccardo Personal WebSite is free software: you can redistribute it and/or modify
@@ -17,7 +17,7 @@
  *
  */
 
-package it.aaccardo.pagesprovider;
+package me.klez.pagesprovider;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
@@ -30,7 +30,7 @@ public class Page {
 	private String id;
 	private String title;
 	private LocalDateTime creationDate;
-	private Author author;
+	private me.klez.pagesprovider.Author author;
 
 	public Page() {
 	}
@@ -64,11 +64,11 @@ public class Page {
 		this.creationDate = creationDate;
 	}
 
-	public Author getAuthor() {
+	public me.klez.pagesprovider.Author getAuthor() {
 		return author;
 	}
 
-	public void setAuthor(Author author) {
+	public void setAuthor(me.klez.pagesprovider.Author author) {
 		this.author = author;
 	}
 }

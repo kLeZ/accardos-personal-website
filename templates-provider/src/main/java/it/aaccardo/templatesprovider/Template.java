@@ -1,5 +1,5 @@
 /*
- * Copyright © 2018 Alessandro Accardo a.k.a. kLeZ <julius8774@gmail.com>
+ * Copyright © 2023 Alessandro Accardo a.k.a. kLeZ <julius8774@gmail.com>
  * This file is part of AAccardo Personal WebSite.
  *
  * AAccardo Personal WebSite is free software: you can redistribute it and/or modify
@@ -17,9 +17,9 @@
  *
  */
 
-package it.aaccardo.templatesprovider;
+package me.klez.templatesprovider;
 
-public class Template implements RedisObject {
+public class Template implements me.klez.templatesprovider.RedisObject {
 	private static final long serialVersionUID = 5629112299777150913L;
 	public static final String OBJECT_KEY = "Template";
 

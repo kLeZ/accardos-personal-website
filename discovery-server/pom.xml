@@ -24,7 +24,7 @@
 	<name>AAccardo Personal WebSite Discovery Server</name>
 	<version>${parent.version}</version>
 	<parent>
-		<groupId>it.aaccardo</groupId>
+		<groupId>me.klez</groupId>
 		<artifactId>accardos-personal-website</artifactId>
 		<version>1.0.0</version>
 	</parent>

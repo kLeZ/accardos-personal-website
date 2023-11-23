@@ -1,5 +1,5 @@
 /*
- * Copyright © 2018 Alessandro Accardo a.k.a. kLeZ <julius8774@gmail.com>
+ * Copyright © 2023 Alessandro Accardo a.k.a. kLeZ <julius8774@gmail.com>
  * This file is part of AAccardo Personal WebSite.
  *
  * AAccardo Personal WebSite is free software: you can redistribute it and/or modify
@@ -17,7 +17,7 @@
  *
  */
 
-package it.aaccardo.templatesprovider;
+package me.klez.templatesprovider;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -30,7 +30,7 @@ public class TemplatesController {
 	protected Logger log = Logger.getLogger(TemplatesController.class.getName());
 
 	@Autowired
-	TemplateRepository repository;
+	me.klez.templatesprovider.TemplateRepository repository;
 
 	@RequestMapping(value = "/templates", method = RequestMethod.GET)
 	public List<Template> all() {
@@ -38,14 +38,14 @@ public class TemplatesController {
 	}
 
 	@RequestMapping(value = "/templates/{key}", method = RequestMethod.GET)
-	public Template get(@PathVariable String key) throws TemplateNotFoundException {
+	public Template get(@PathVariable String key) throws me.klez.templatesprovider.TemplateNotFoundException {
 		Template template = new Template();
 		template.setId(key);
 		Template ret = repository.get(template);
 		if (ret != null) {
 			return ret;
 		} else {
-			throw new TemplateNotFoundException(key);
+			throw new me.klez.templatesprovider.TemplateNotFoundException(key);
 		}
 	}
 

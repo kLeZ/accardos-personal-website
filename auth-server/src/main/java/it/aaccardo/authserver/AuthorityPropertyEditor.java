@@ -1,5 +1,5 @@
 /*
- * Copyright © 2018 Alessandro Accardo a.k.a. kLeZ <julius8774@gmail.com>
+ * Copyright © 2023 Alessandro Accardo a.k.a. kLeZ <julius8774@gmail.com>
  * This file is part of AAccardo Personal WebSite.
  *
  * AAccardo Personal WebSite is free software: you can redistribute it and/or modify
@@ -16,22 +16,20 @@
  * along with AAccardo Personal WebSite.  If not, see <http://www.gnu.org/licenses/>.
  *
  */
-package it.aaccardo.authserver;
-
-import java.awt.Component;
-import java.awt.Graphics;
-import java.awt.Rectangle;
-import java.beans.PropertyChangeListener;
-import java.beans.PropertyEditor;
+package me.klez.authserver;
 
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
+
+import java.awt.*;
+import java.beans.PropertyChangeListener;
+import java.beans.PropertyEditor;
 
 /**
  * Used to bind Strings to a {@link org.springframework.security.core.GrantedAuthority} when adding/editing a client.
  * <p>
  * Only implements {@link #getAsText()} and {@link #setAsText(String)}.
- * 
+ *
  * @author Moritz Schulze
  * @author klez
  */

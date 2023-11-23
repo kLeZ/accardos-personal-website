@@ -1,5 +1,5 @@
 /*
- * Copyright © 2018 Alessandro Accardo a.k.a. kLeZ <julius8774@gmail.com>
+ * Copyright © 2023 Alessandro Accardo a.k.a. kLeZ <julius8774@gmail.com>
  * This file is part of AAccardo Personal WebSite.
  *
  * AAccardo Personal WebSite is free software: you can redistribute it and/or modify
@@ -17,7 +17,7 @@
  *
  */
 
-package it.aaccardo.templatesprovider;
+package me.klez.templatesprovider;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
@@ -56,7 +56,7 @@ public class TemplateRepository implements RedisRepository<Template> {
 	@Override
 	public List<Template> getObjects() {
 		List<Template> templates = new ArrayList<>();
-		for (Object template : redisTemplate.opsForHash().values(Template.OBJECT_KEY)) {
+		for (Object template : redisTemplate.opsForHash().values(me.klez.templatesprovider.Template.OBJECT_KEY)) {
 			templates.add((Template) template);
 		}
 		return templates;

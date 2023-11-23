@@ -1,5 +1,5 @@
 /*
- * Copyright © 2018 Alessandro Accardo a.k.a. kLeZ <julius8774@gmail.com>
+ * Copyright © 2023 Alessandro Accardo a.k.a. kLeZ <julius8774@gmail.com>
  * This file is part of AAccardo Personal WebSite.
  *
  * AAccardo Personal WebSite is free software: you can redistribute it and/or modify
@@ -17,7 +17,7 @@
  *
  */
 
-package it.aaccardo.webui;
+package me.klez.webui;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
@@ -80,7 +80,7 @@ public class Application {
 		return new UrlTemplateResolver();
 	}
 
-	public TemplateResolver dynamicTemplateResolver() {
-		return new TemplateResolver();
+	public me.klez.webui.TemplateResolver dynamicTemplateResolver() {
+		return new me.klez.webui.TemplateResolver();
 	}
 }

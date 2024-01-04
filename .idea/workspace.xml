@@ -22,68 +22,22 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dab8f7c3-e84b-41bd-a336-bfa13021ba09" name="Default Changelist" comment="Rebranded as me.klez">
-      <change afterPath="$PROJECT_DIR$/.idea/JPAMappingSettings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+    <list default="true" id="dab8f7c3-e84b-41bd-a336-bfa13021ba09" name="Default Changelist" comment="- changed version&#10;- updated README.md">
+      <change afterPath="$PROJECT_DIR$/.idea/accardos-personal-website.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accardos-personal-website.iml" beforeDir="false" afterPath="$PROJECT_DIR$/accardos-personal-website.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/auth-server/auth-server.iml" beforeDir="false" afterPath="$PROJECT_DIR$/auth-server/auth-server.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-server/src/main/java/it/aaccardo/authserver/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-server/src/main/java/me/klez/authserver/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-server/src/main/java/it/aaccardo/authserver/AuthorityPropertyEditor.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-server/src/main/java/me/klez/authserver/AuthorityPropertyEditor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-server/src/main/java/it/aaccardo/authserver/OAuthConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-server/src/main/java/me/klez/authserver/OAuthConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-server/src/main/java/it/aaccardo/authserver/SecurityConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-server/src/main/java/me/klez/authserver/SecurityConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-server/src/main/java/it/aaccardo/authserver/SplitCollectionEditor.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-server/src/main/java/me/klez/authserver/SplitCollectionEditor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-server/src/main/java/it/aaccardo/authserver/controller/ClientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-server/src/main/java/me/klez/authserver/controller/ClientController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-server/src/main/java/it/aaccardo/authserver/controller/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-server/src/main/java/me/klez/authserver/controller/IndexController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/auth-server/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/curriculum-provider/curriculum-provider.iml" beforeDir="false" afterPath="$PROJECT_DIR$/curriculum-provider/curriculum-provider.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/curriculum-provider/src/main/java/it/aaccardo/curriculumprovider/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/curriculum-provider/src/main/java/me/klez/curriculumprovider/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/curriculum-provider/src/main/java/it/aaccardo/curriculumprovider/Curriculum.java" beforeDir="false" afterPath="$PROJECT_DIR$/curriculum-provider/src/main/java/me/klez/curriculumprovider/Curriculum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/curriculum-provider/src/main/java/it/aaccardo/curriculumprovider/CurriculumController.java" beforeDir="false" afterPath="$PROJECT_DIR$/curriculum-provider/src/main/java/me/klez/curriculumprovider/CurriculumController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/curriculum-provider/src/main/java/it/aaccardo/curriculumprovider/CurriculumNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/curriculum-provider/src/main/java/me/klez/curriculumprovider/CurriculumNotFoundException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/curriculum-provider/src/main/java/it/aaccardo/curriculumprovider/CurriculumRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/curriculum-provider/src/main/java/me/klez/curriculumprovider/CurriculumRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/curriculum-provider/src/main/java/it/aaccardo/curriculumprovider/LocalDateTimeToStringConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/curriculum-provider/src/main/java/me/klez/curriculumprovider/LocalDateTimeToStringConverter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/curriculum-provider/src/main/java/it/aaccardo/curriculumprovider/LocalDateToStringConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/curriculum-provider/src/main/java/me/klez/curriculumprovider/LocalDateToStringConverter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/curriculum-provider/src/main/java/it/aaccardo/curriculumprovider/StringToLocalDateConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/curriculum-provider/src/main/java/me/klez/curriculumprovider/StringToLocalDateConverter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/curriculum-provider/src/main/java/it/aaccardo/curriculumprovider/StringToLocalDateTimeConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/curriculum-provider/src/main/java/me/klez/curriculumprovider/StringToLocalDateTimeConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/curriculum-provider/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/curriculum-provider/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/discovery-server/discovery-server.iml" beforeDir="false" afterPath="$PROJECT_DIR$/discovery-server/discovery-server.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/discovery-server/src/main/java/it/aaccardo/discoveryserver/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/discovery-server/src/main/java/me/klez/discoveryserver/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages-provider/page-provider.iml" beforeDir="false" afterPath="$PROJECT_DIR$/pages-provider/pages-provider.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/discovery-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/discovery-server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages-provider/pages-provider.iml" beforeDir="false" afterPath="$PROJECT_DIR$/pages-provider/pages-provider.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages-provider/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pages-provider/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages-provider/src/main/java/it/aaccardo/pagesprovider/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/pages-provider/src/main/java/me/klez/pagesprovider/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages-provider/src/main/java/it/aaccardo/pagesprovider/Author.java" beforeDir="false" afterPath="$PROJECT_DIR$/pages-provider/src/main/java/me/klez/pagesprovider/Author.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages-provider/src/main/java/it/aaccardo/pagesprovider/LocalDateTimeToStringConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/pages-provider/src/main/java/me/klez/pagesprovider/LocalDateTimeToStringConverter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages-provider/src/main/java/it/aaccardo/pagesprovider/LocalDateToStringConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/pages-provider/src/main/java/me/klez/pagesprovider/LocalDateToStringConverter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages-provider/src/main/java/it/aaccardo/pagesprovider/Page.java" beforeDir="false" afterPath="$PROJECT_DIR$/pages-provider/src/main/java/me/klez/pagesprovider/Page.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages-provider/src/main/java/it/aaccardo/pagesprovider/PageNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/pages-provider/src/main/java/me/klez/pagesprovider/PageNotFoundException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages-provider/src/main/java/it/aaccardo/pagesprovider/PagesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/pages-provider/src/main/java/me/klez/pagesprovider/PagesController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages-provider/src/main/java/it/aaccardo/pagesprovider/PagesRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/pages-provider/src/main/java/me/klez/pagesprovider/PagesRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages-provider/src/main/java/it/aaccardo/pagesprovider/StringToLocalDateConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/pages-provider/src/main/java/me/klez/pagesprovider/StringToLocalDateConverter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages-provider/src/main/java/it/aaccardo/pagesprovider/StringToLocalDateTimeConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/pages-provider/src/main/java/me/klez/pagesprovider/StringToLocalDateTimeConverter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates-provider/src/main/java/it/aaccardo/templatesprovider/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/templates-provider/src/main/java/me/klez/templatesprovider/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates-provider/src/main/java/it/aaccardo/templatesprovider/DuplicateTemplateException.java" beforeDir="false" afterPath="$PROJECT_DIR$/templates-provider/src/main/java/me/klez/templatesprovider/DuplicateTemplateException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates-provider/src/main/java/it/aaccardo/templatesprovider/RedisObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/templates-provider/src/main/java/me/klez/templatesprovider/RedisObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates-provider/src/main/java/it/aaccardo/templatesprovider/RedisRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/templates-provider/src/main/java/me/klez/templatesprovider/RedisRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates-provider/src/main/java/it/aaccardo/templatesprovider/Template.java" beforeDir="false" afterPath="$PROJECT_DIR$/templates-provider/src/main/java/me/klez/templatesprovider/Template.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates-provider/src/main/java/it/aaccardo/templatesprovider/TemplateNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/templates-provider/src/main/java/me/klez/templatesprovider/TemplateNotFoundException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates-provider/src/main/java/it/aaccardo/templatesprovider/TemplateRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/templates-provider/src/main/java/me/klez/templatesprovider/TemplateRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates-provider/src/main/java/it/aaccardo/templatesprovider/TemplatesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/templates-provider/src/main/java/me/klez/templatesprovider/TemplatesController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates-provider/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/templates-provider/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates-provider/templates-provider.iml" beforeDir="false" afterPath="$PROJECT_DIR$/templates-provider/templates-provider.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web-ui/src/main/java/it/aaccardo/webui/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-ui/src/main/java/me/klez/webui/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web-ui/src/main/java/it/aaccardo/webui/TemplateResolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-ui/src/main/java/me/klez/webui/TemplateResolver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web-ui/src/main/java/it/aaccardo/webui/clients/CurriculumSubscriber.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-ui/src/main/java/me/klez/webui/clients/CurriculumSubscriber.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web-ui/src/main/java/it/aaccardo/webui/clients/PagesSubscriber.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-ui/src/main/java/me/klez/webui/clients/PagesSubscriber.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web-ui/src/main/java/it/aaccardo/webui/clients/TemplatesSubscriber.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-ui/src/main/java/me/klez/webui/clients/TemplatesSubscriber.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web-ui/src/main/java/it/aaccardo/webui/controllers/CurriculumController.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-ui/src/main/java/me/klez/webui/controllers/CurriculumController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web-ui/src/main/java/it/aaccardo/webui/controllers/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-ui/src/main/java/me/klez/webui/controllers/HomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web-ui/src/main/java/it/aaccardo/webui/controllers/PagesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-ui/src/main/java/me/klez/webui/controllers/PagesController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web-ui/src/main/java/it/aaccardo/webui/models/Author.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-ui/src/main/java/me/klez/webui/models/Author.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web-ui/src/main/java/it/aaccardo/webui/models/Curriculum.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-ui/src/main/java/me/klez/webui/models/Curriculum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web-ui/src/main/java/it/aaccardo/webui/models/NewPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-ui/src/main/java/me/klez/webui/models/NewPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web-ui/src/main/java/it/aaccardo/webui/models/Page.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-ui/src/main/java/me/klez/webui/models/Page.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web-ui/src/main/java/it/aaccardo/webui/models/Template.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-ui/src/main/java/me/klez/webui/models/Template.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-ui/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web-ui/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web-ui/web-ui.iml" beforeDir="false" afterPath="$PROJECT_DIR$/web-ui/web-ui.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -127,6 +81,7 @@
     </option>
   </component>
   <component name="FindBugs-IDEA-Workspace">
+    <toolWindowEditorPreview>false</toolWindowEditorPreview>
     <analyzeBeforeCheckIn>true</analyzeBeforeCheckIn>
   </component>
   <component name="FindInProjectRecents">
@@ -169,15 +124,15 @@
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="5" />
   </component>
-  <component name="KubernetesApiProvider"><![CDATA[{
-  "contexts": [
+  <component name="KubernetesApiProvider">{
+  &quot;contexts&quot;: [
     {
-      "name": "k-cdemo01",
-      "clusterPath": "/k8s/clusters/c-m-mcddkkls"
+      &quot;name&quot;: &quot;k-cdemo01&quot;,
+      &quot;clusterPath&quot;: &quot;/k8s/clusters/c-m-mcddkkls&quot;
     }
   ],
-  "isMigrated": true
-}]]></component>
+  &quot;isMigrated&quot;: true
+}</component>
   <component name="KubernetesSettings">
     <option name="contextName" value="k-cdemo01" />
   </component>
@@ -238,12 +193,15 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Maven.accardos-personal-website [clean,verify].executor": "Run",
+    "Maven.accardos-personal-website [versions:set...].executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "SONARLINT_PRECOMMIT_ANALYSIS": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/home/klez/projects/accardos-personal-website",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -253,7 +211,8 @@
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.11357702",
     "project.structure.side.proportion": "0.3218391",
-    "settings.editor.selected.configurable": "configurable.group.build",
+    "run.configurations.included.in.services": "true",
+    "settings.editor.selected.configurable": "com.fwdekker.randomness.template.TemplateListConfigurable",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -278,9 +237,17 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn versions:set -DnewVersion=1.0.1" />
+      <command value="mvn versions:set -DnewVersion=1.0.0" />
+    </option>
+  </component>
   <component name="RunDashboard">
     <option name="configurationTypes">
       <set>
+        <option value="MicronautRunConfigurationType" />
+        <option value="QuarkusRunConfigurationType" />
         <option value="SpringBootApplicationConfigurationType" />
       </set>
     </option>
@@ -344,6 +311,13 @@
       <item itemvalue="Spring Boot.Application (4)" />
       <item itemvalue="Spring Boot.Application (5)" />
     </list>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-1.8.0_392-corretto-1.8.0_392-f644763e9732-5759c461" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SpringBeansView">
@@ -425,7 +399,11 @@
       <workItem from="1594851794865" duration="1542000" />
       <workItem from="1700650892872" duration="2913000" />
       <workItem from="1700726614506" duration="770000" />
-      <workItem from="1700727413579" duration="4306000" />
+      <workItem from="1700727413579" duration="4373000" />
+      <workItem from="1700739268405" duration="117000" />
+      <workItem from="1700844690166" duration="3511000" />
+      <workItem from="1704329438161" duration="52000" />
+      <workItem from="1704329511313" duration="1064000" />
     </task>
     <task id="LOCAL-00001" summary="Version bumped spring, thymeleaf.&#10;Using Intellij Idea Ultimate.&#10;Version bumped from jdk 1.6 to jdk 1.8.">
       <created>1543412614105</created>
@@ -504,7 +482,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700735959370</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="maven builds">
+      <option name="closed" value="true" />
+      <created>1700736741844</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1700736741844</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -542,11 +528,23 @@
     <MESSAGE value="New IntelliJ version and rebump for the project with a coming migration to Java 21 and Spring Cloud 2022.0.4 (Spring Boot 3.1.5)" />
     <MESSAGE value="Made modules and parent pom for all of them" />
     <MESSAGE value="Rebranded as me.klez" />
-    <option name="LAST_COMMIT_MESSAGE" value="Rebranded as me.klez" />
+    <MESSAGE value="maven builds" />
+    <MESSAGE value="- changed version&#10;- updated README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="- changed version&#10;- updated README.md" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
+  <component name="WfRunsListSearchHistory"><![CDATA[{
+  "history": [
+    {
+    },
+    {
+    }
+  ],
+  "lastFilter": {
+  }
+}]]></component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
     <select />

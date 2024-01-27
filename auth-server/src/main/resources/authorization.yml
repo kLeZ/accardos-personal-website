@@ -1,3 +1,5 @@
+server:
+  port: 1440
 spring:
   application:
     name: authorization
@@ -5,11 +7,56 @@ spring:
     url: jdbc:postgresql:localhost:5432
     username: postgres
     password: postgres
+  jpa:
+    open-in-view: false
   thymeleaf:
     cache: false
-server:
-  port: 1440
+  authorization-server:
+    secret:
+      key: e75cfff3887247faa39c41359438615f
+      algorithm:
+        secret-key-spec: HmacSHA256
+        json-web-signature: HS256
+    password-encoder:
+      strength: 8
+    issuer: http://${HOSTNAME:localhost}:${server.port:8080}
+  mail:
+    host: smtp.google.com
+    username: postmaster@klez.me
+    password: pippo
+    port: 25
+    properties:
+      mail.smtp.auth: true
+      mail.smtp.connectiontimeout: 5000
+      mail.smtp.from: admin@klez.me
+      mail.smtp.port: 25
+      mail.smtp.timeout: 5000
+      mail.smtp.writetimeout: 5000
 eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:1337/eureka/
+user:
+  logout:
+    redirectTimeout: 5
+  recoveryPassword:
+    mail:
+      body: |-
+        Salve, per il recupero della password, cliccare il link ${spring.authorization-server.issuer}/resetPassword/
+      subject: Notifica di recupero Password
+    token_temporary:
+      validity_seconds: 300
+  registration:
+    mail:
+      body: |-
+        Salve, l'account è stato creato con il seguente USERNAME: {username}
+        È necessario impostare una PASSWORD cliccando al seguente link ${spring.authorization-server.issuer}/resetPassword/
+      subject: Notifica di attivazione account
+    token_temporary:
+      validity_seconds: 600
+  lock:
+    soft-lock-minutes: 1
+    max-attempts: 4
+logging:
+  level:
+    me.klez: TRACE

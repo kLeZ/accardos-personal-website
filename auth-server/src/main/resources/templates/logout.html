@@ -1,0 +1,55 @@
+<!--
+  ~ Copyright © 2024 Alessandro Accardo a.k.a. kLeZ <julius8774@gmail.com>
+  ~ This file is part of AAccardo Personal WebSite.
+  ~
+  ~ AAccardo Personal WebSite is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ AAccardo Personal WebSite is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with AAccardo Personal WebSite.  If not, see <http://www.gnu.org/licenses/>.
+  ~
+  -->
+
+<!DOCTYPE html>
+<html layout:decorator="master/layout" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" th:content="|${timeout};url=${redirectUrl}|"/>
+    <title>Logout</title>
+</head>
+<body>
+<div class="container" layout:fragment="content">
+    <div class="row">
+        <div class="col text-center">
+            <img alt="Logo" class="logo" th:src="@{/images/logo.png}"/>
+        </div>
+        <div class="col">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Logout avvenuto con successo</h5>
+                    <p>Sarai redirezionato su <span th:text="${redirectUrl}">http://localhost:9443/home</span> in <span
+                            class="countdown" th:text="${timeout}">5</span></p>
+                    <a class="link float-right" id="loginLink" th:href="'login'"><small>Torna alla login</small></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script th:inline="javascript">
+        let timer = /* [(${timeout})] */ 5;
+        const interval = setInterval(function () {
+            //by parsing integer, I avoid all extra string processing
+            --timer;
+            if (timer < 0) clearInterval(interval);
+            $('.countdown').html(timer);
+        }, 1000);
+    </script>
+</div>
+</body>
+</html>

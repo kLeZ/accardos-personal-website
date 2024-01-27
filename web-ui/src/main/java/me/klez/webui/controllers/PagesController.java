@@ -1,5 +1,5 @@
 /*
- * Copyright © 2023 Alessandro Accardo a.k.a. kLeZ <julius8774@gmail.com>
+ * Copyright © 2024 Alessandro Accardo a.k.a. kLeZ <julius8774@gmail.com>
  * This file is part of AAccardo Personal WebSite.
  *
  * AAccardo Personal WebSite is free software: you can redistribute it and/or modify
@@ -19,6 +19,7 @@
 
 package me.klez.webui.controllers;
 
+import jakarta.servlet.http.HttpServletRequest;
 import lombok.extern.slf4j.Slf4j;
 import me.klez.webui.clients.PagesSubscriber;
 import me.klez.webui.models.NewPage;
@@ -33,7 +34,6 @@ import org.springframework.web.servlet.HandlerMapping;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.util.UriTemplate;
 
-import javax.servlet.http.HttpServletRequest;
 import java.util.Map;
 
 @Slf4j
